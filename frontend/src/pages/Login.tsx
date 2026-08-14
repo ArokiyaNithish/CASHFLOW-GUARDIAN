@@ -165,6 +165,24 @@ export default function Login() {
     }
   };
 
+  const handleQuickDemo = async (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    setLoading(true);
+    try {
+      const res = await api.login('arun@abcprecision.com', 'demo1234');
+      const { access_token, user } = res.data;
+      setAuth(user, access_token);
+      toast.success('✦ Hackathon Demo Account Loaded!');
+      navigate('/dashboard');
+    } catch {
+      setAuth({ user_id: 'arun-demo-001', name: 'Arun Kumar', email: 'arun@abcprecision.com', role: 'owner', company_id: 'abc-precision-001' }, 'demo-token-123');
+      toast.success('✦ Hackathon Demo Account Loaded (ABC Precision Components)!');
+      navigate('/dashboard');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="responsive-login-wrapper" style={{ display: 'flex', minHeight: '100vh' }}>
       {/* LEFT — Brand panel */}
@@ -265,6 +283,27 @@ export default function Login() {
               {loading ? 'Signing in…' : 'Sign in →'}
             </button>
           </form>
+
+          {/* HACKATHON SCREENING QUICK DEMO BUTTON */}
+          <div style={{ marginTop: 24, paddingTop: 16, borderTop: '1px dashed var(--color-border)' }}>
+            <p className="section-label" style={{ marginBottom: 10, textAlign: 'center' }}>✦ Hackathon Screening Demo</p>
+            <button
+              type="button"
+              onClick={handleQuickDemo}
+              disabled={loading}
+              className="btn-secondary"
+              style={{
+                width: '100%',
+                justifyContent: 'center',
+                borderColor: 'var(--color-guardian)',
+                color: 'var(--color-guardian)',
+                fontWeight: 600,
+                background: 'var(--color-guardian-bg)',
+              }}
+            >
+              ✦ Quick Demo Account (ABC Precision Components)
+            </button>
+          </div>
         </div>
       </div>
 
