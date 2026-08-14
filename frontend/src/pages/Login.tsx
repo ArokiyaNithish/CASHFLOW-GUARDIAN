@@ -94,8 +94,9 @@ export default function Login() {
     }
   };
 
-  const triggerGooglePrompt = () => {
-    setShowGoogleModal(true);
+  const triggerGooglePrompt = (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    executeGoogleLogin('arokiyanithishj@gmail.com', 'Arokiya Nithish');
   };
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -218,6 +219,7 @@ export default function Login() {
 
           {/* Fallback Custom Google Button */}
           <button
+            type="button"
             onClick={triggerGooglePrompt}
             disabled={loading}
             style={{
