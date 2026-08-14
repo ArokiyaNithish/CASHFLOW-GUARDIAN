@@ -72,19 +72,7 @@ export default function Login() {
   };
 
   const triggerGooglePrompt = () => {
-    if (window.google?.accounts?.id) {
-      try {
-        window.google.accounts.id.prompt((notification: any) => {
-          if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-            setShowGoogleModal(true);
-          }
-        });
-      } catch {
-        setShowGoogleModal(true);
-      }
-    } else {
-      setShowGoogleModal(true);
-    }
+    setShowGoogleModal(true);
   };
 
   const handleLogin = async (e: React.FormEvent) => {
