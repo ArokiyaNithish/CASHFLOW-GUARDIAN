@@ -1,0 +1,37 @@
+txn_id,company_id,txn_date,amount,category,counterparty,balance_after,description
+db08e089-222a-4251-a6a6-bca2659c30db,abc-precision-001,2026-02-15,351000.0,receivable,Narain LLC,971000.0,Payment received
+a9b1c8bf-089f-42b7-86b6-7f785fbcf250,abc-precision-001,2026-02-20,-97000.0,payable,"Trivedi, Trivedi and Dua",874000.0,Supplier payment
+5aef6f24-73e6-4ff9-b234-dccfc2fab5f2,abc-precision-001,2026-02-25,-82000.0,payable,"Deep, Zachariah and Bakshi",792000.0,Supplier payment
+b39cde5a-65d0-4fe9-9e7a-c50f4323315e,abc-precision-001,2026-03-01,257000.0,receivable,D’Alia and Sons,1049000.0,Payment received
+2ff6a035-2fb6-49cb-a5e4-15c07e8eda5f,abc-precision-001,2026-03-05,-161000.0,payable,Varkey-Chaudhari,888000.0,Supplier payment
+728c1605-cadb-43be-bb29-a83e24aadd64,abc-precision-001,2026-03-10,-138000.0,payable,Dalal-Jain,750000.0,Supplier payment
+1b3154dd-6ff7-4976-8f2e-a3d5b17fedef,abc-precision-001,2026-03-15,393000.0,receivable,Baral-Nigam,1143000.0,Payment received
+efa8ab5c-f50e-4ff5-bbf2-ed55614a925a,abc-precision-001,2026-03-20,-123000.0,payable,"Shanker, Bala and Chad",1020000.0,Supplier payment
+f40fe145-f736-419f-aae2-ff19b5522a9b,abc-precision-001,2026-03-25,-226000.0,payable,Bahl PLC,794000.0,Supplier payment
+fdca71c0-c08a-4876-8d16-64a5ad93f2be,abc-precision-001,2026-04-01,223000.0,receivable,Parmar-Chad,1017000.0,Payment received
+6b2eefc0-0d22-4b80-ae1e-059f72a7848f,abc-precision-001,2026-04-05,-91000.0,payable,Pandya and Sons,926000.0,Supplier payment
+3f4b9ed3-41d7-4035-bc8e-05a13352fdce,abc-precision-001,2026-04-10,-164000.0,payable,Suresh-Kumar,762000.0,Supplier payment
+ddb952be-1b01-4019-a8a2-162129a3a53a,abc-precision-001,2026-04-15,315000.0,receivable,"Subramanian, Oommen and Rajago",1077000.0,Payment received
+7e49cb7c-c9e1-4f55-ab47-ea256464234a,abc-precision-001,2026-04-20,-197000.0,payable,"Nayar, Chanda and Lad",880000.0,Supplier payment
+bebe38a0-cf7c-49af-868c-2e06843bc5bb,abc-precision-001,2026-04-25,-106000.0,payable,Thakkar LLC,774000.0,Supplier payment
+71be11c7-8638-49fa-88a2-a77a97fd0bd6,abc-precision-001,2026-05-01,362000.0,receivable,Loke and Sons,1136000.0,Payment received
+9b572033-ceb9-42d3-a1b6-e63e14b26ec0,abc-precision-001,2026-05-05,-241000.0,payable,"Goyal, Kalita and Mishra",895000.0,Supplier payment
+50567083-2a07-4c8e-921a-22ed483a78d4,abc-precision-001,2026-05-10,-94000.0,payable,Johal LLC,801000.0,Supplier payment
+30b4c9b3-7e31-41c5-908a-5d52aa306f31,abc-precision-001,2026-05-15,250000.0,receivable,Thaman-Dhaliwal,1051000.0,Payment received
+d47cc1d6-921d-4d20-87ae-a93e4bec51ca,abc-precision-001,2026-05-20,-175000.0,payable,Pai-Sabharwal,876000.0,Supplier payment
+b7e38e5f-8d2a-4785-8984-26f9055102a5,abc-precision-001,2026-05-25,-151000.0,payable,Ramaswamy-Pingle,725000.0,Supplier payment
+5f2f1731-134e-4cc4-8fc0-859406607dec,abc-precision-001,2026-06-01,319000.0,receivable,Mangat Group,1044000.0,Payment received
+95391294-8774-4c57-ae67-3097d01fa4ef,abc-precision-001,2026-06-05,-185000.0,payable,"Madan, Sahni and Sharma",859000.0,Supplier payment
+af1f5c8e-ad31-47e5-9c04-0e89b992b15f,abc-precision-001,2026-06-10,-212000.0,payable,Vora-Sule,647000.0,Supplier payment
+681f87d9-c85c-4072-b554-bc5bd38ef7bc,abc-precision-001,2026-06-15,276000.0,receivable,Menon Group,923000.0,Payment received
+fc94142c-8927-41aa-8ccf-f82015201cfa,abc-precision-001,2026-06-20,-234000.0,payable,Rajagopal Group,689000.0,Supplier payment
+c50a97e8-075a-46aa-b1b0-9a73ee19494d,abc-precision-001,2026-06-25,-131000.0,payable,"Wable, Dewan and Wali",558000.0,Supplier payment
+7e3221a9-4ca3-4b44-a4d9-23a2136d762b,abc-precision-001,2026-07-01,318000.0,receivable,Murthy Group,876000.0,Payment received
+f6e6a505-16ee-4324-807f-72b4c975e89c,abc-precision-001,2026-07-05,-153000.0,payable,Hegde Inc,723000.0,Supplier payment
+810b671a-969f-420d-9bbd-ffd4e6af2e5d,abc-precision-001,2026-07-10,-177000.0,payable,Kashyap LLC,546000.0,Supplier payment
+a26863e0-4093-4070-aa6a-7675edf04026,abc-precision-001,2026-07-15,212000.0,receivable,Lall-Yogi,758000.0,Payment received
+73fe4820-9798-4544-9044-6055ceb9ebce,abc-precision-001,2026-07-20,-243000.0,payable,"Gour, Bassi and Gill",515000.0,Supplier payment
+b9f46eec-1697-447d-a0bc-8fa8ca2875d8,abc-precision-001,2026-07-25,-97000.0,payable,"Dhaliwal, Dube and Khatri",418000.0,Supplier payment
+1e546ac6-bab7-40e0-8188-bc7966635a86,abc-precision-001,2026-08-01,353000.0,receivable,Narayan and Sons,771000.0,Payment received
+a2f2fb04-f2ed-40a5-9fd5-6c08eb750741,abc-precision-001,2026-08-05,-186000.0,payable,"Master, Goyal and Palan",585000.0,Supplier payment
+97bfaea8-c09f-4a4d-b64c-c986f581ce46,abc-precision-001,2026-08-10,-125000.0,payable,"Gaba, Kurian and Sha",620000,Supplier payment

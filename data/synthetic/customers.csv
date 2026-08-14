@@ -1,0 +1,51 @@
+customer_id,company_id,name,avg_delay_days,std_delay_days,reliability_score,profile
+175f29a7-7e0e-4cf6-9e4a-2f69fc34457e,abc-precision-001,"Bawa, Goel and Goda",1.1394267984578836,1,87,reliable
+6cf121b0-a583-44ee-a3a5-493fc77a1d8c,abc-precision-001,"Bora, Kala and Gaba",1.2415504997598328,1,90,reliable
+1b3becca-a5e5-4ab7-bc41-998c8d479e3b,abc-precision-001,Oza PLC,0.7232107381488228,1,88,reliable
+9c673347-0b6b-482d-a761-a94bd059a583,abc-precision-001,"Sankaran, Vig and Thakur",1.1766994874229113,1,95,reliable
+f41e822f-bb4e-4466-8472-f385407476cb,abc-precision-001,Kakar-Setty,0.5869388326294162,1,93,reliable
+b7765f23-0844-4b57-8000-2c03b95caf8e,abc-precision-001,Khalsa-Yohannan,0.5317826794817836,1,88,reliable
+fb29beb3-75bb-48cb-9574-8cd6569a7104,abc-precision-001,Natarajan PLC,0.7186379748036034,1,95,reliable
+0f8f4568-f82d-4828-b44d-b8c633005252,abc-precision-001,Choudhry-Hari,1.1020187290499803,1,95,reliable
+f1ddd2b9-7153-4509-a69a-7a2112a1a561,abc-precision-001,Sankaran-Nanda,0.6988376506866485,1,97,reliable
+6c4adcf6-ce0b-43d8-ad4c-da5101bbc8b5,abc-precision-001,"Dhar, Ben and Chokshi",1.201324973590236,1,93,reliable
+a8ecae82-19b2-4b7f-9696-c2a686a7aed3,abc-precision-001,Tailor-Sagar,0.7204406220406967,1,96,reliable
+b2aff970-68ba-4c93-9100-0f178cb93135,abc-precision-001,"Bajwa, Pillai and Seshadri",0.7781907082306627,1,87,reliable
+9a1a27ae-a182-458d-862a-fb98aacd9765,abc-precision-001,Bala and Sons,1.2588073671297673,1,89,reliable
+66e040f4-7218-4ae3-a07e-5c612b6aa443,abc-precision-001,"Dugar, Tripathi and Dada",1.1981393949882269,1,92,reliable
+f53eac9a-255c-4399-8111-29f42cbc39d3,abc-precision-001,"Rau, Acharya and Grover",0.7778713416716418,1,90,reliable
+83805f63-6352-4f11-bfd2-ee9a2508f3db,abc-precision-001,Kapadia LLC,1.4572130722067813,1,92,reliable
+be5d953f-f2c5-47a0-899a-84ce925817e2,abc-precision-001,Dhawan LLC,0.6022102765198487,1,93,reliable
+9ac47c13-4aed-4195-a13b-24b814393f05,abc-precision-001,Prakash and Sons,0.596716376833464,1,92,reliable
+7b8ad018-4854-4973-8218-453fcfbb2428,abc-precision-001,"Arya, Seshadri and Toor",1.103726031366891,1,87,reliable
+125f8378-b5ad-45a8-9b71-6f94ae2fbb90,abc-precision-001,Khanna Inc,1.2297317866938178,1,95,reliable
+c6b496e4-2897-4264-b1bc-416bb30842d8,abc-precision-001,"Korpal, Pall and Kanda",0.6248261628532094,1,93,reliable
+42018d84-9638-40c7-9df0-ee549131ecea,abc-precision-001,"Nagi, Dugar and Chaudhary",0.5788001980784582,1,91,reliable
+61c3ec16-7358-40f5-b8c2-72dbb6a08419,abc-precision-001,Lala-Som,1.3294046642529949,1,96,reliable
+eb9f8f7c-e7dc-465e-9a0f-c26876eb6111,abc-precision-001,Master PLC,1.385451747936807,1,92,reliable
+66915358-3f5e-43aa-bbda-827c0ab288c4,abc-precision-001,"Kaur, Thaker and Narang",1.077352145256762,1,88,reliable
+581ea63d-334a-4562-b6d3-483355e175f8,abc-precision-001,"Zachariah, Sahni and Kadakia",4.545824383655662,2,72,moderate
+8367f0ee-e9a4-4ca3-9f3a-d37d5d13259b,abc-precision-001,Patla and Sons,5.273068340788692,2,70,moderate
+e60fceed-7383-4b74-ba7b-b1cbac77cf78,abc-precision-001,"Arora, Borde and Buch",5.355317721015147,2,70,moderate
+02bf0564-3e29-4c02-8a01-d3832c8cc5a2,abc-precision-001,"Srivastava, Karan and Nanda",4.880126225039167,2,76,moderate
+74298424-016f-4975-840b-7b83644623c2,abc-precision-001,Sehgal-Pandya,5.1356844442644,2,74,moderate
+ed3f1efe-bc3e-428b-9e38-a62b8e725c2d,abc-precision-001,"Dhar, Dada and Kata",4.662654097156085,2,74,moderate
+40376774-87cf-42f0-84b7-dc85aadea128,abc-precision-001,"Mody, Goda and Sekhon",4.709507030771488,2,73,moderate
+3ba6eb16-013e-491f-9479-1c30c3d19c18,abc-precision-001,Mann Group,5.201820313458551,2,79,moderate
+2a997bda-faf4-4be4-b8c9-563c72e6d34e,abc-precision-001,Mane-Sankar,5.148035385246594,2,78,moderate
+e84a3021-02b8-49be-ab15-fce0f8d88c3b,abc-precision-001,"Sunder, Sani and Sarraf",5.13497828819706,2,77,moderate
+6aad3755-11c5-4084-9991-1dff45db49ba,abc-precision-001,"Din, Pal and Bhagat",5.229126797950349,2,71,moderate
+fc9c03a7-3a00-492c-8324-bd31944799de,abc-precision-001,"Tripathi, Chand and Kamdar",4.962260211851116,2,73,moderate
+76059dd8-a2e1-4e63-9fc4-1c99e47e6509,abc-precision-001,"Goda, Natarajan and Rajagopalan",5.4895233506365955,2,79,moderate
+4202f574-c87a-424a-80d5-625268c9f042,abc-precision-001,Patel-Anand,5.188161958433313,2,72,moderate
+93bb28d7-c8b5-49d3-982b-52df2da1089d,abc-precision-001,Bakshi Group,5.184614250989875,2,69,moderate
+b3340f4f-4539-4d6c-afb3-f1182a32033e,abc-precision-001,Choudhry Ltd,4.729048071964105,2,69,moderate
+97106f22-2f6c-4d33-a579-b795895e0373,abc-precision-001,Hans Group,5.3050458007712145,2,75,moderate
+1585d5cc-fa2e-4529-94e3-7bf0ea757bc4,abc-precision-001,Padmanabhan Inc,4.7677408759757025,2,72,moderate
+14997a15-1980-45c3-8bac-da78db9baff3,abc-precision-001,Bhakta Group,12.413136124185545,4,49,chronic_late
+1c05bb97-e8e6-4f62-90c3-b8eabf1c2f0c,abc-precision-001,Dhawan-Chaudhuri,12.37636762647267,4,45,chronic_late
+6053dd0e-5cf3-44ac-bbd5-5279a2f4cf22,abc-precision-001,Khanna-Majumdar,11.71262654405414,4,47,chronic_late
+bfcf77cf-15c9-48fa-9672-d5981124202b,abc-precision-001,Bhandari-Peri,11.895631901060664,4,50,chronic_late
+19be8ec9-08cb-4d0e-9120-6bdb022d64f2,abc-precision-001,Bhargava PLC,11.958851852587399,4,44,chronic_late
+a5bb3d74-ed6d-4acd-a490-9988435833c7,abc-precision-001,Ramakrishnan and Sons,11.639630319525507,4,48,chronic_late
+564787a8-dd6b-4bda-8bb5-d88dda6df670,abc-precision-001,Mahal PLC,12.03897728966729,4,49,chronic_late

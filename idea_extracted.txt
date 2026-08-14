@@ -1,0 +1,2341 @@
+﻿Absolutely. CashFlow Guardian can be made into a very strong hackathon project if we design it as a real Agentic Finance system, not merely an AI dashboard.
+≡ƒÜÇ CASHFLOW GUARDIAN
+ΓÇ£Predict the cash crisis. Understand why. Plan the rescue. Act before it happens.ΓÇ¥
+Track: FinTech ΓåÆ Agentic Finance
+1. The Problem Statement
+The real problem
+Many MSMEs don't fail because they are unprofitable.
+They fail because they run out of usable cash at the wrong time.
+Consider a small manufacturing company:
+Financial event
+Amount
+Timing
+Current cash
+Γé╣6,00,000
+Today
+Customer receivable
+Γé╣8,00,000
+Expected in 15 days
+Supplier payment
+Γé╣3,50,000
+7 days
+Employee salaries
+Γé╣2,00,000
+10 days
+EMI
+Γé╣80,000
+12 days
+Tax/other obligation
+Γé╣1,20,000
+15 days
+The company may look healthy because:
+Assets / expected revenue > expenses
+But the actual question is:
+Will enough cash be available on each individual day?
+That's the problem CashFlow Guardian solves.
+Delayed payments are a particularly important MSME working-capital problem in India; government reporting has highlighted the substantial amount of MSME receivables tied up in delayed payments.
+2. Existing Solutions Have a Gap
+Most existing financial software does something like:
+Transactions
+      Γåô
+Dashboard
+      Γåô
+Charts
+      Γåô
+"Your cash balance is low"
+The business owner still has to figure out:
+What caused this?
+What will happen next?
+What should I do?
+Which payment should I prioritize?
+Should I ask a customer to pay early?
+Can I delay a supplier payment?
+Should I use financing?
+3. Our Innovation
+CashFlow Guardian changes the model from:
+Financial Monitoring
+to
+Financial Prevention
+Instead of:
+"You have a cash-flow problem."
+It says:
+"You are likely to have a Γé╣1.4 lakh cash deficit in 17 days. Here is why, here are three possible solutions, and here is the safest action."
+And then it can execute approved actions.
+4. What Exactly Is CashFlow Guardian?
+Think of it as:
+AI CFO for MSMEs
+But don't call it simply an "AI CFO" in your technical explanation.
+It consists of:
+Financial Data
+      Γåô
+Financial Digital Twin
+      Γåô
+Forecasting Engine
+      Γåô
+Risk Engine
+      Γåô
+Agentic Reasoning
+      Γåô
+Action Planner
+      Γåô
+Human Approval
+      Γåô
+Action Execution
+      Γåô
+Verification
+5. The Financial Digital Twin
+This is one of your most important innovations.
+The system creates a live digital representation of the company's financial condition.
+It maintains:
+Cash
+Current bank balance
+Available cash
+Minimum safety reserve
+Receivables
+Customer
+Invoice
+Amount
+Due date
+Historical payment behavior
+Probability of late payment
+Payables
+Supplier
+Amount
+Due date
+Priority
+Penalty
+Negotiability
+Recurring obligations
+Salary
+Rent
+EMI
+Tax
+Subscriptions
+Utilities
+Business behavior
+Revenue trend
+Expense trend
+Customer concentration
+Payment delays
+Seasonality
+Cash volatility
+This allows the system to simulate the company's future.
+6. How the AI Works
+This is where your project becomes much more than CRUD.
+Layer 1 ΓÇö Data ingestion
+Input:
+Bank transactions
+Invoices
+Receivables
+Payables
+Expenses
+Payroll
+Loan obligations
+For the hackathon, use synthetic data.
+You can create:
+customers.csv
+transactions.csv
+invoices.csv
+suppliers.csv
+expenses.csv
+loans.csv
+7. Layer 2 ΓÇö ML Forecasting
+The ML engine predicts:
+Future cash balance
+For example:
+Today       Γé╣6.2L
+Day 5       Γé╣4.1L
+Day 10      Γé╣2.8L
+Day 15      Γé╣1.2L
+Day 17     -Γé╣1.4L   ΓåÉ CRISIS
+Day 30      Γé╣0.8L
+The model can predict:
+customer payment probability
+expected payment date
+revenue
+expenses
+cash balance
+cash deficit probability
+8. Which ML models?
+For your prototype, don't overcomplicate it.
+You can compare:
+Cash forecasting
+XGBoost
+Random Forest
+LightGBM
+Prophet / time-series model
+LSTM if your team has enough time
+I'd recommend:
+XGBoost + time-series features
+because it is easier to train, explain and demonstrate than an LSTM.
+9. Customer Payment Prediction
+This is a very useful ML component.
+Suppose:
+Customer A
+Historical:
+Invoice 1 ΓåÆ paid 2 days late
+Invoice 2 ΓåÆ paid 4 days late
+Invoice 3 ΓåÆ paid 7 days late
+Invoice 4 ΓåÆ paid 12 days late
+The model predicts:
+Expected delay: 9 days
+So instead of assuming:
+Γé╣5 lakh receivable = Γé╣5 lakh cash tomorrow
+CashFlow Guardian says:
+Expected usable cash = Γé╣5 lakh ├ù payment probability / expected timing
+This makes the cash forecast much more realistic.
+10. Layer 3 ΓÇö Risk Engine
+Now combine everything.
+Example:
+Cash deficit probability: 82%
+Main causes:
+1. Customer A likely to delay Γé╣3L
+2. Supplier B payment Γé╣2.5L
+3. Payroll Γé╣1.8L
+4. EMI Γé╣80K
+The system calculates:
+Cash Flow Risk Score
+Example:
+82/100 ΓÇö HIGH RISK
+11. Layer 4 ΓÇö RAG
+Now we bring your RAG requirement into the project properly.
+Don't use RAG just because "RAG is popular."
+Use it for financial policies and business rules.
+Your knowledge base can contain:
+MSME payment guidelines
+TReDS information
+Company financial policies
+Supplier payment policies
+Financing eligibility rules
+Internal business policies
+Risk policies
+The RAG system retrieves relevant information when the agent needs it.
+For example:
+"Is this invoice eligible for early-payment financing?"
+The agent retrieves the relevant policy before making its recommendation.
+12. Layer 5 ΓÇö Agentic AI
+This is the heart of your project.
+The agent receives:
+Current financial state
++
+ML predictions
++
+Risk analysis
++
+Retrieved policies
+Then it reasons.
+13. REASON ΓåÆ PLAN ΓåÆ ACT
+This is extremely important because it directly satisfies the track requirement.
+REASON
+Agent determines:
+"The projected deficit is mainly caused by a delayed Γé╣3 lakh receivable from Customer A."
+It checks:
+payment history
+invoice age
+customer behavior
+upcoming obligations
+available cash
+business safety reserve
+14. PLAN
+The agent creates several possible plans.
+Plan A
+Ask Customer A for early payment.
+Plan B
+Negotiate Supplier B payment.
+Plan C
+Use invoice financing.
+Plan D
+Combination of A + B.
+Then it evaluates:
+Plan A
+Risk: Medium
+Cost: Low
+Impact: High
+Plan B
+Risk: Low
+Cost: Low
+Impact: Medium
+Plan C
+Risk: Medium
+Cost: Medium
+Impact: High
+Plan D
+Risk: Low
+Cost: Low
+Impact: Very High
+Then recommends:
+Plan D
+15. ACT
+This is what makes it an agent, not a chatbot.
+After user approval:
+The system can perform simulated actions such as:
+Action 1
+Generate/send a payment reminder.
+Action 2
+Generate supplier negotiation request.
+Action 3
+Create financing application/recommendation.
+Action 4
+Update the financial plan.
+Action 5
+Schedule follow-up.
+16. Human Oversight
+This is essential.
+Don't allow the AI to freely move money.
+Instead:
+AI recommends
+      Γåô
+User sees reason
+      Γåô
+User approves
+      Γåô
+Action executes
+      Γåô
+System verifies
+For example:
+AI recommends requesting early payment of Γé╣2,50,000 from Customer A.
+Buttons:
+[Approve] [Reject] [Modify]
+This gives you responsible AI + financial safety.
+17. Example Complete Scenario
+This should be your main hackathon demo.
+Imagine:
+Company:
+ABC Precision Components
+Current cash:
+Γé╣6.2 lakh
+Step 1
+System imports financial data.
+Step 2
+ML predicts:
+Expected cash deficit:
+Γé╣1.4 lakh
+Expected occurrence:
+17 days
+Step 3
+Agent investigates.
+It finds:
+Customer A
+Invoice: Γé╣3 lakh
+Expected delay: 11 days
+Supplier B
+Payment: Γé╣2.5 lakh
+Due: 8 days
+Payroll
+Γé╣1.8 lakh
+Due: 10 days
+Step 4 ΓÇö Agent reasoning
+Agent says:
+"The company is not revenue-poor. The immediate problem is a timing mismatch between receivables and obligations."
+That's an excellent insight.
+Step 5 ΓÇö Agent generates solutions
+OPTION A
+Collect Customer A early
+Expected impact:
++Γé╣3L
+Cost:
+Low
+OPTION B
+Delay Supplier B by 10 days
+Expected impact:
++Γé╣2.5L
+Risk:
+Medium
+OPTION C
+Invoice financing
+Expected impact:
++Γé╣2.7L
+Cost:
+Interest/fees
+OPTION D
+A + B
+Expected impact:
++Γé╣5.5L
+Risk:
+Low
+Step 6
+AI recommends:
+OPTION D
+But asks for approval.
+Step 7
+Owner clicks:
+APPROVE
+Step 8
+System executes:
+Payment reminder ΓåÆ Customer A
+Negotiation request ΓåÆ Supplier B
+Cash-flow model ΓåÆ Updated
+Step 9
+The forecast changes.
+Before:
+Day 17
+Cash = -Γé╣1.4L
+After:
+Day 17
+Cash = +Γé╣3.1L
+≡ƒöÑ This before-vs-after visualization will be one of the strongest parts of your demo.
+18. Application UI
+I would build approximately 6 main screens.
+Screen 1 ΓÇö Executive Dashboard
+------------------------------------------
+ CASHFLOW GUARDIAN
+------------------------------------------
+Cash Available        Γé╣6.2L
+Projected Cash        Γé╣8.1L
+Risk Score             82 ≡ƒö┤
+Next Crisis            17 days
+Receivables            Γé╣8.7L
+Payables               Γé╣7.4L
+------------------------------------------
+ΓÜá CASH FLOW ALERT
+Γé╣1.4L deficit predicted
+in 17 days.
+[Investigate]
+------------------------------------------
+19. Screen 2 ΓÇö Cash Flow Forecast
+Graph:
+Cash
+ Γé╣8L |       Γò¡ΓöÇΓöÇΓöÇΓò«
+ Γé╣6L |ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓò»   Γò░ΓöÇΓöÇ
+ Γé╣4L |              Γò▓
+ Γé╣2L |               Γò▓
+ Γé╣0L |----------------Γò▓----
+     Today          Day 30
+Show:
+Predicted
+Best case
+Worst case
+This gives the judge a visual understanding immediately.
+20. Screen 3 ΓÇö AI Investigation
+Show:
+Why is the business at risk?
+82% HIGH RISK
+Primary causes:
+≡ƒö┤ Customer A payment delay
+   Impact: Γé╣3L
+≡ƒƒá Supplier B obligation
+   Impact: Γé╣2.5L
+≡ƒƒí Payroll obligation
+   Impact: Γé╣1.8L
+Then:
+Ask Guardian
+User can ask:
+Why will I run out of cash?
+The AI answers using actual financial data.
+21. Screen 4 ΓÇö Agent Plan
+GUARDIAN PLAN
+Goal:
+Prevent Γé╣1.4L cash deficit
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+Action 1
+Request early payment
+Γé╣3L
+Action 2
+Negotiate supplier
+Γé╣2.5L
+Action 3
+Monitor cash reserve
+Expected result:
+Γé╣1.4L deficit
+        Γåô
+Γé╣3.1L surplus
+Buttons:
+Approve Plan
+Modify
+Reject
+22. Screen 5 ΓÇö Action Center
+After approval:
+ACTION CENTER
+Γ£ô Payment reminder generated
+Γ£ô Supplier negotiation prepared
+Γ£ô Cash-flow forecast updated
+Status:
+Customer A     SENT
+Supplier B     PENDING
+Forecast       UPDATED
+23. Screen 6 ΓÇö What-if Simulator
+This could be your killer feature.
+User enters:
+"What if Customer A pays 20 days late?"
+System simulates:
+Current forecast
+Cash deficit:
+Γé╣1.4L
+                 Γåô
+Customer A +20 days
+Cash deficit:
+Γé╣4.2L
+Risk:
+94%
+Then:
+Guardian recommends Plan C.
+This shows true financial intelligence.
+24. Technology Stack
+I would recommend:
+Frontend
+React + TypeScript
+Use:
+React
+Tailwind CSS
+Recharts
+Axios
+Backend
+Python + FastAPI
+Why?
+Because your AI/ML ecosystem is strongest in Python.
+React
+  Γåô
+FastAPI
+  Γåô
+AI/ML services
+Database
+PostgreSQL
+Store:
+users
+companies
+invoices
+transactions
+customers
+suppliers
+predictions
+agent actions
+approvals
+ML
+Python
+Libraries:
+pandas
+numpy
+scikit-learn
+xgboost
+Optional:
+Prophet
+GenAI
+Use an LLM for:
+Reasoning
+Planning
+Explanation
+Natural-language interaction
+Possible architecture:
+FastAPI
+   Γåô
+Agent Orchestrator
+   Γåô
+LLM
+The exact LLM can be chosen based on what APIs/free tiers your team has available.
+RAG
+Possible stack:
+LlamaIndex or LangChain
+Vector database:
+FAISS
+or:
+Chroma
+Knowledge base:
+Financial policies
+MSME guidelines
+Business rules
+Financing rules
+Company policies
+Agent framework
+You don't necessarily need a giant agent framework.
+You can build a controlled orchestration layer yourself:
+Planner
+   Γåô
+Risk Tool
+   Γåô
+Forecast Tool
+   Γåô
+RAG Tool
+   Γåô
+Action Tool
+If you want a framework, LangGraph is a good fit because your workflow is naturally stateful:
+REASON
+ Γåô
+PLAN
+ Γåô
+APPROVAL
+ Γåô
+ACT
+ Γåô
+VERIFY
+ML + LLM division
+This is VERY important.
+Don't let the LLM calculate everything.
+ML handles:
+forecasting
+probabilities
+risk scores
+payment prediction
+anomaly detection
+LLM handles:
+reasoning
+explanation
+planning
+natural language
+interpreting financial context
+Rules engine handles:
+safety constraints
+approval requirements
+financial limits
+RAG handles:
+policies
+documentation
+financial rules
+This architecture will sound much more professional to judges.
+25. Architecture
+Your PPT can show this:
+                 USER / MSME OWNER
+                         Γöé
+                         Γû╝
+                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                Γöé   WEB APP       Γöé
+                Γöé React + TS      Γöé
+                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         Γöé
+                         Γû╝
+                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                Γöé    FastAPI      Γöé
+                Γöé   API Gateway   Γöé
+                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         Γöé
+          ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+          Γöé              Γöé              Γöé
+          Γû╝              Γû╝              Γû╝
+     PostgreSQL       ML Engine      RAG Engine
+          Γöé              Γöé              Γöé
+          Γöé              Γû╝              Γû╝
+          Γöé         Forecasting      Policies
+          Γöé         Risk scoring     Guidelines
+          Γöé              Γöé              Γöé
+          ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         Γû╝
+                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                Γöé AGENT ORCHESTRATORΓöé
+                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         Γöé
+                    REASON
+                         Γåô
+                      PLAN
+                         Γåô
+                 SAFETY CHECK
+                         Γåô
+                 HUMAN APPROVAL
+                         Γåô
+                       ACT
+                         Γåô
+                     VERIFY
+26. Security
+Because this is fintech, make security a dedicated PPT slide.
+Use:
+Authentication
+JWT / OAuth
+Authorization
+Role-based access control.
+Example:
+Owner
+Finance Manager
+Viewer
+Data protection
+HTTPS
+encrypted sensitive fields
+secure secrets
+no real banking credentials in prototype
+AI security
+tool permission boundaries
+action approval
+prompt-injection protection
+audit logs
+action limits
+27. The Action Permission System
+This is an excellent innovation for your project.
+Create:
+Guardian Permission Levels
+≡ƒƒó Level 1 ΓÇö Automatic
+AI can:
+analyze
+forecast
+alert
+generate reports
+≡ƒƒí Level 2 ΓÇö Approval Required
+AI can prepare:
+payment reminders
+supplier negotiations
+financing applications
+User approves.
+≡ƒö┤ Level 3 ΓÇö Strict Approval
+Anything involving:
+money transfer
+borrowing
+investment
+bank-account changes
+requires explicit human authorization.
+28. Dataset
+Because your hackathon says:
+Public, open-source, or synthetic data only.
+Don't use real customer banking data.
+Create a synthetic MSME financial dataset.
+For example:
+100 companies
+500 customers
+300 suppliers
+10,000 transactions
+5,000 invoices
+Generate realistic patterns:
+On-time customers
+Late customers
+Seasonal revenue
+Weekend effects
+Salary cycles
+Supplier cycles
+Unexpected expenses
+Cash-flow crises
+Then deliberately inject crisis scenarios.
+For example:
+Customer payment delay
++
+Large supplier obligation
++
+Payroll
++
+EMI
+This lets you demonstrate that your AI catches the crisis.
+29. How the user uses the app
+The user journey should be extremely simple.
+Step 1
+Register company.
+Step 2
+Upload/import:
+Transactions
+Invoices
+Receivables
+Payables
+Expenses
+Step 3
+CashFlow Guardian creates the company's:
+Financial Digital Twin
+Step 4
+System runs analysis.
+Step 5
+Dashboard displays:
+Current financial health
+Cash forecast
+Risk
+Upcoming obligations
+Receivable risk
+Step 6
+AI detects a future problem.
+Example:
+≡ƒö┤ Cash deficit predicted in 17 days
+Step 7
+User clicks:
+Investigate
+AI explains the cause.
+Step 8
+User clicks:
+Generate Rescue Plan
+Agent creates multiple strategies.
+Step 9
+User reviews:
+Reason
+Expected impact
+Cost
+Risk
+Actions
+Step 10
+User:
+Approves
+Step 11
+Agent executes allowed actions.
+Step 12
+System verifies the result.
+30. Your Complete Demo Story
+For the actual hackathon, I recommend not demonstrating every feature.
+Do this:
+0:00
+Show company dashboard.
+"This company has Γé╣6.2 lakh cash."
+0:20
+Click:
+Forecast
+"Our AI predicts a Γé╣1.4 lakh cash deficit in 17 days."
+0:40
+Click:
+Why?
+AI identifies:
+Customer payment delay + supplier obligation + payroll.
+1:00
+Click:
+Generate Rescue Plan
+AI generates 3 strategies.
+1:20
+Select recommended plan.
+1:30
+Human approves.
+1:40
+Actions execute.
+2:00
+Return to forecast.
+Before:
+≡ƒö┤ -Γé╣1.4 lakh
+After:
+≡ƒƒó +Γé╣3.1 lakh
+Then say:
+ΓÇ£We didn't build an AI that tells an entrepreneur that they're in trouble. We built an AI agent that sees the trouble coming and helps them prevent it.ΓÇ¥
+That is your strongest demo moment.
+31. What You Should Claim vs Not Claim
+Claim:
+"Prototype demonstrates autonomous financial decision workflows using synthetic data."
+Good.
+Claim:
+"Designed for integration with banking/accounting APIs."
+Good.
+Don't claim:
+"We can access everyone's bank account."
+Don't claim:
+"Our AI guarantees businesses won't fail."
+Don't claim:
+"AI can autonomously transfer money."
+Keep the prototype safe and realistic.
+32. Your MVP
+Don't try to build everything.
+For the hackathon MVP, build these 7 things:
+1∩╕ÅΓâú Financial data ingestion
+CSV upload.
+2∩╕ÅΓâú Cash-flow forecasting
+ML.
+3∩╕ÅΓâú Payment-delay prediction
+ML.
+4∩╕ÅΓâú Risk detection
+Rules + ML.
+5∩╕ÅΓâú AI investigation
+LLM.
+6∩╕ÅΓâú Agentic rescue plan
+Reason ΓåÆ Plan.
+7∩╕ÅΓâú Action + approval
+Plan ΓåÆ Human approval ΓåÆ simulated execution.
+If these seven work smoothly, you have a very strong prototype.
+≡ƒÅå The final product positioning
+Don't describe CashFlow Guardian as:
+"An AI-powered cash flow management website."
+Instead:
+CashFlow Guardian
+Autonomous Financial Early-Warning & Rescue Agent for MSMEs
+Detect ΓåÆ Predict ΓåÆ Reason ΓåÆ Plan ΓåÆ Act ΓåÆ Verify
+Core innovation
+Financial Digital Twin + Predictive ML + Agentic AI + RAG + Human-in-the-loop execution
+Target users
+MSMEs, startups, small manufacturers, distributors and service businesses
+Business model
+SaaS + B2B financial intelligence API
+Primary impact
+Prevent avoidable working-capital crises before they become business-threatening.
+One important next step
+Before you start coding, I recommend we freeze the exact MVP architecture and feature set. Otherwise, with AI + ML + LLM + RAG + agents + web development, your team can easily spend the hackathon building too many disconnected features.
+The ideal next stage is to create a complete implementation blueprint with:
+database schema ΓåÆ synthetic dataset ΓåÆ ML models ΓåÆ agent tools ΓåÆ RAG documents ΓåÆ API endpoints ΓåÆ React pages ΓåÆ folder structure ΓåÆ exact agent workflow ΓåÆ prompts ΓåÆ security ΓåÆ 24/48-hour development plan ΓåÆ final demo scenario.
+That will turn this from an idea into something your team can actually build.
+CashFlow Guardian ΓÇö Master Build Prompt
+Use this as the system/kickoff prompt for an AI coding assistant (Claude Code, Cursor, etc.) to scaffold the hackathon MVP. Paste it as-is, then iterate section by section.
+ROLE
+You are building CashFlow Guardian, an agentic finance MVP for a hackathon (FinTech / Agentic Finance track). Act as a senior full-stack + ML engineer. Build incrementally, confirm each layer works before moving to the next, and keep the scope strictly limited to the MVP defined below ΓÇö do not add extra features.
+PRODUCT ONE-LINER
+"Predict the cash crisis. Understand why. Plan the rescue. Act before it happens."
+CashFlow Guardian is an autonomous financial early-warning agent for MSMEs. It forecasts future daily cash balance, explains why a shortfall will happen, proposes ranked rescue plans, and ΓÇö after human approval ΓÇö executes simulated actions (reminders, negotiation requests, forecast updates).
+Core loop: Detect ΓåÆ Predict ΓåÆ Reason ΓåÆ Plan ΓåÆ Act ΓåÆ Verify
+NON-NEGOTIABLE SCOPE (build exactly these 7 things, nothing more)
+Financial data ingestion ΓÇö CSV upload of synthetic MSME data (customers, suppliers, transactions, invoices, loans, expenses).
+Cash-flow forecasting ΓÇö ML model predicting daily cash balance for the next 30 days.
+Payment-delay prediction ΓÇö ML model predicting expected delay per customer/invoice based on historical behavior.
+Risk detection ΓÇö Rules + ML combine into a single Cash Flow Risk Score (0ΓÇô100) with root-cause breakdown.
+AI investigation ΓÇö LLM explains why the risk exists in plain language, using real numbers from the data (not hallucinated).
+Agentic rescue plan ΓÇö LLM-driven Reason ΓåÆ Plan step that generates 3ΓÇô4 ranked options (e.g., collect early, delay supplier, financing, combination) with impact/cost/risk for each.
+Action + approval loop ΓÇö User approves/rejects/modifies a plan; approved actions are simulated (not real) and the forecast recalculates before/after.
+Do NOT build: real bank integrations, real money movement, multi-tenant auth systems beyond basic role stubs, or anything beyond a working local/demo-deployable prototype.
+TECH STACK (fixed ΓÇö don't substitute without asking)
+Frontend: React + TypeScript, Tailwind CSS, Recharts, Axios
+Backend: Python + FastAPI
+Database: PostgreSQL (SQLite acceptable for hackathon speed if noted)
+ML: pandas, numpy, scikit-learn, xgboost (Prophet optional for time-series baseline)
+LLM/Agent layer: any available LLM API for reasoning/planning/explanation; simple hand-rolled orchestrator (Planner ΓåÆ Risk Tool ΓåÆ Forecast Tool ΓåÆ RAG Tool ΓåÆ Action Tool) ΓÇö use LangGraph only if the team already knows it
+RAG: LlamaIndex or LangChain + FAISS or Chroma, over a small knowledge base of MSME payment policies, TReDS/financing rules, and internal business rules
+Auth: JWT, simple role stub (Owner / Finance Manager / Viewer) ΓÇö no need for full RBAC enforcement in MVP
+ARCHITECTURE (target)
+React (TS) ΓåÆ FastAPI Gateway ΓåÆ {PostgreSQL, ML Engine, RAG Engine}
+                                        Γåô
+                              Agent Orchestrator
+                     REASON ΓåÆ PLAN ΓåÆ SAFETY CHECK ΓåÆ HUMAN APPROVAL ΓåÆ ACT ΓåÆ VERIFY
+Division of responsibility (keep strict):
+ML = forecasting, payment-delay probabilities, risk scores, anomaly detection
+LLM = reasoning, explanation, plan generation, natural language Q&A
+Rules engine = safety constraints, approval thresholds, financial limits
+RAG = policy/guideline retrieval only, not calculations
+ACTION PERMISSION LEVELS (implement as a simple enum/config, enforce in backend)
+≡ƒƒó Level 1 (automatic): analyze, forecast, alert, generate reports
+≡ƒƒí Level 2 (approval required): prepare payment reminders, supplier negotiation drafts, financing applications
+≡ƒö┤ Level 3 (strict/blocked in MVP): money transfer, borrowing, bank-account changes ΓÇö never implement, only show as "not available in prototype"
+DATA MODEL (synthetic, generate first)
+Generate synthetic CSVs before writing any app code:
+customers.csv (~500 rows) ΓÇö id, name, historical payment delay pattern
+suppliers.csv (~300 rows)
+transactions.csv (~10,000 rows) ΓÇö bank-transaction-like ledger
+invoices.csv (~5,000 rows) ΓÇö customer, amount, due date, paid date
+loans.csv ΓÇö EMI schedule
+expenses.csv ΓÇö recurring (salary, rent, utilities) + one-off
+Inject at least one clear crisis scenario (e.g., ABC Precision Components: Γé╣6.2L cash, Γé╣3L delayed receivable + Γé╣2.5L supplier payment + Γé╣1.8L payroll converging around day 17) so the demo has a guaranteed "aha" moment.
+DEMO SCRIPT TO BUILD TOWARD (2-minute flow)
+Dashboard shows current cash (Γé╣6.2L), risk score (82 ≡ƒö┤), "next crisis in 17 days."
+Click Investigate ΓåÆ AI explains root causes with real numbers.
+Click Generate Rescue Plan ΓåÆ 3ΓÇô4 ranked options appear (impact/cost/risk).
+User selects recommended option, clicks Approve.
+System "executes" simulated actions (reminder sent, negotiation drafted).
+Forecast chart updates live: -Γé╣1.4L ΓåÆ +Γé╣3.1L, before/after.
+Close line: "We didn't build an AI that tells an entrepreneur they're in trouble. We built an agent that sees it coming and helps prevent it."
+BUILD ORDER (do in this sequence, confirm each before continuing)
+Generate synthetic dataset + seed PostgreSQL/SQLite
+FastAPI skeleton with CSV upload endpoint + DB models
+XGBoost cash-flow forecast model (train on synthetic data, expose /forecast endpoint)
+Payment-delay prediction model (expose /predict-delay)
+Risk scoring logic combining both (expose /risk-score with root-cause breakdown)
+Minimal RAG index over 5ΓÇô10 policy documents (MSME payment norms, financing eligibility) + /policy-query endpoint
+Agent orchestrator: /investigate (reason), /rescue-plan (plan with ranked options)
+Approval + simulated action execution endpoints (/approve-plan, /action-status)
+React frontend: Dashboard ΓåÆ Forecast chart ΓåÆ Investigation panel ΓåÆ Plan review ΓåÆ Action center ΓåÆ What-if simulator (stretch goal, build last if time remains)
+Wire before/after forecast recalculation into the UI for the demo moment
+OUTPUT FORMAT FOR EACH STEP
+When implementing each numbered step above: briefly state what you're building, write the code, then show how to run/test it before moving to the next step. Flag any place where you're making an assumption about business logic so it can be corrected quickly under time pressure.
+GUARDRAILS
+Never claim real bank access or real money movement in code comments, UI copy, or docs ΓÇö keep all financial actions clearly simulated.
+Keep LLM-generated numbers grounded in actual computed data passed into the prompt ΓÇö never let the LLM invent financial figures.
+Prioritize a working, demoable end-to-end path over completeness in any single layer.
+CashFlow Guardian ΓÇö Implementation Blueprint
+Autonomous Financial Early-Warning & Rescue Agent for MSMEs Detect ΓåÆ Predict ΓåÆ Reason ΓåÆ Plan ΓåÆ Act ΓåÆ Verify
+This document is the build-ready spec for the hackathon prototype: database schema, synthetic dataset generator, ML models, agent tools, RAG corpus, API endpoints, frontend pages, folder structure, exact agent workflow with prompts, security model, a 48-hour dev plan, and the final demo script.
+1. System Overview
+React (TS)  ΓåÆ  FastAPI Gateway  ΓåÆ  PostgreSQL
+                       Γöé
+                       Γö£ΓöÇΓåÆ ML Engine (forecast, risk, payment-delay)
+                       Γö£ΓöÇΓåÆ RAG Engine (policies, FAISS/Chroma)
+                       ΓööΓöÇΓåÆ Agent Orchestrator (LangGraph)
+                                REASON ΓåÆ PLAN ΓåÆ SAFETY CHECK ΓåÆ
+                                HUMAN APPROVAL ΓåÆ ACT ΓåÆ VERIFY
+Division of labor (keep this strict ΓÇö it's what makes the architecture defensible to judges):
+ML ΓåÆ forecasting, probabilities, risk scores, anomaly detection
+LLM ΓåÆ reasoning, explanation, planning, natural language
+Rules engine ΓåÆ safety constraints, approval thresholds, permission levels
+RAG ΓåÆ policies, guidelines, financing eligibility rules
+2. Database Schema (PostgreSQL)
+-- ============ CORE ENTITIES ============
+CREATE TABLE companies (
+    company_id      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name            TEXT NOT NULL,
+    industry        TEXT,
+    registration_no TEXT,
+    safety_reserve  NUMERIC(14,2) DEFAULT 0,   -- minimum cash buffer owner wants maintained
+    created_at      TIMESTAMPTZ DEFAULT now()
+);
+CREATE TABLE users (
+    user_id      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id   UUID REFERENCES companies(company_id),
+    name         TEXT NOT NULL,
+    email        TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    role         TEXT CHECK (role IN ('owner','finance_manager','viewer')) DEFAULT 'viewer',
+    created_at   TIMESTAMPTZ DEFAULT now()
+);
+-- ============ FINANCIAL DATA ============
+CREATE TABLE customers (
+    customer_id   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    name          TEXT NOT NULL,
+    avg_delay_days NUMERIC(5,2) DEFAULT 0,     -- rolling avg, updated by ML job
+    reliability_score NUMERIC(5,2) DEFAULT 100 -- 0-100, updated by ML job
+);
+CREATE TABLE suppliers (
+    supplier_id   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    name          TEXT NOT NULL,
+    negotiability TEXT CHECK (negotiability IN ('high','medium','low')) DEFAULT 'medium',
+    penalty_rate  NUMERIC(5,2) DEFAULT 0        -- % penalty for late payment
+);
+CREATE TABLE invoices (   -- receivables
+    invoice_id    UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    customer_id   UUID REFERENCES customers(customer_id),
+    amount        NUMERIC(14,2) NOT NULL,
+    issue_date    DATE NOT NULL,
+    due_date      DATE NOT NULL,
+    status        TEXT CHECK (status IN ('open','paid','overdue','financed')) DEFAULT 'open',
+    predicted_pay_date  DATE,        -- filled by ML
+    predicted_pay_prob  NUMERIC(5,2) -- filled by ML, 0-1
+);
+CREATE TABLE payables (   -- supplier obligations
+    payable_id    UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    supplier_id   UUID REFERENCES suppliers(supplier_id),
+    amount        NUMERIC(14,2) NOT NULL,
+    due_date      DATE NOT NULL,
+    status        TEXT CHECK (status IN ('open','paid','delayed')) DEFAULT 'open',
+    priority      TEXT CHECK (priority IN ('critical','normal','flexible')) DEFAULT 'normal'
+);
+CREATE TABLE recurring_obligations (  -- payroll, rent, EMI, tax, subscriptions
+    obligation_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    type          TEXT CHECK (type IN ('payroll','rent','emi','tax','subscription','utility')),
+    amount        NUMERIC(14,2) NOT NULL,
+    due_day_of_month INT,           -- e.g. 28 for payroll
+    frequency     TEXT CHECK (frequency IN ('monthly','quarterly','annual')) DEFAULT 'monthly'
+);
+CREATE TABLE transactions (   -- historical bank transactions (synthetic)
+    txn_id        UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    txn_date      DATE NOT NULL,
+    amount        NUMERIC(14,2) NOT NULL,   -- negative = outflow
+    category      TEXT,                     -- 'receivable','payable','payroll','emi','tax','misc'
+    counterparty  TEXT,
+    balance_after NUMERIC(14,2)
+);
+-- ============ AI / AGENT LAYER ============
+CREATE TABLE forecasts (
+    forecast_id   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    generated_at  TIMESTAMPTZ DEFAULT now(),
+    horizon_days  INT DEFAULT 30,
+    daily_projection JSONB,      -- [{day:1, cash: 610000}, ...] best/worst/expected
+    deficit_day   INT,           -- first day cash goes negative, null if none
+    deficit_amount NUMERIC(14,2),
+    risk_score    NUMERIC(5,2)   -- 0-100
+);
+CREATE TABLE risk_events (
+    event_id      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    forecast_id   UUID REFERENCES forecasts(forecast_id),
+    cause_type    TEXT,          -- 'customer_delay','supplier_obligation','payroll','emi','tax'
+    reference_id  UUID,          -- invoice_id / payable_id / obligation_id
+    impact_amount NUMERIC(14,2),
+    severity      TEXT CHECK (severity IN ('high','medium','low'))
+);
+CREATE TABLE agent_plans (
+    plan_id       UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    forecast_id   UUID REFERENCES forecasts(forecast_id),
+    company_id    UUID REFERENCES companies(company_id),
+    reasoning_text TEXT,          -- LLM output: why the crisis is happening
+    options        JSONB,         -- [{label:'A', desc, impact, cost, risk}, ...]
+    recommended_option TEXT,
+    status         TEXT CHECK (status IN ('proposed','approved','rejected','modified')) DEFAULT 'proposed',
+    created_at     TIMESTAMPTZ DEFAULT now()
+);
+CREATE TABLE agent_actions (
+    action_id     UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    plan_id       UUID REFERENCES agent_plans(plan_id),
+    action_type   TEXT,          -- 'payment_reminder','supplier_negotiation','financing_request'
+    target_ref_id UUID,          -- invoice_id / payable_id
+    permission_level TEXT CHECK (permission_level IN ('L1_auto','L2_approval','L3_strict')),
+    status        TEXT CHECK (status IN ('pending_approval','approved','executed','rejected')) DEFAULT 'pending_approval',
+    payload       JSONB,         -- generated content: email draft, negotiation terms
+    executed_at   TIMESTAMPTZ,
+    approved_by   UUID REFERENCES users(user_id)
+);
+CREATE TABLE audit_log (
+    log_id        UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_id    UUID REFERENCES companies(company_id),
+    actor         TEXT,          -- 'agent' or user_id
+    action        TEXT,
+    details        JSONB,
+    created_at    TIMESTAMPTZ DEFAULT now()
+);
+3. Synthetic Dataset Generator
+Target scale (enough to look real, not so much it slows the demo):
+15ΓÇô20 companies (demo on 1 in depth: "ABC Precision Components")
+40ΓÇô60 customers, 20ΓÇô30 suppliers per company
+500ΓÇô1000 transactions per company (6ΓÇô12 months history)
+80ΓÇô150 invoices per company
+Generation logic (Python, faker + numpy):
+Generate customers with a payment-behavior profile: reliable (0-3 day delay), moderate (3-8 day delay), chronic_late (8-20 day delay), each with a std-dev for realism.
+Generate suppliers with negotiability and penalty_rate.
+Generate recurring obligations (payroll on a fixed day, rent, EMI, quarterly tax).
+Generate 6-12 months of transaction history following these profiles, including weekday/weekend and salary-cycle effects.
+Deliberately inject one crisis window near "today" in the data: a large customer invoice with a chronic_late customer + a supplier payment + payroll landing within the same 10-15 day window. This is what your forecast/agent will "discover" live in the demo ΓÇö script it, don't leave it to chance.
+# generate_dataset.py (skeleton)
+import numpy as np, pandas as pd
+from faker import Faker
+fake = Faker("en_IN")
+PROFILES = {
+    "reliable":     {"mean_delay": 1,  "std": 1},
+    "moderate":     {"mean_delay": 5,  "std": 2},
+    "chronic_late": {"mean_delay": 12, "std": 4},
+}
+def generate_customers(n=50):
+    rows = []
+    for i in range(n):
+        profile = np.random.choice(list(PROFILES), p=[0.5, 0.35, 0.15])
+        rows.append({
+            "customer_id": f"CUST{i:04d}",
+            "name": fake.company(),
+            "profile": profile,
+            **PROFILES[profile]
+        })
+    return pd.DataFrame(rows)
+# similarly: generate_suppliers(), generate_invoices(), generate_transactions()
+# then: inject_crisis_scenario(df_invoices, df_payables, df_obligations, today)
+Keep raw CSVs in /data/synthetic/ and a seed_crisis.py script that always reproduces the same scripted crisis for the demo, plus a random_seed.py for judges who want to see it work on fresh data.
+4. ML Models
+Model
+Purpose
+Approach
+Library
+Payment-delay predictor
+Predict expected delay (days) per invoice, per customer
+Regression on customer historical delay + invoice amount + seasonality features
+XGBoost / scikit-learn
+Payment probability
+Probability invoice is paid by a given date
+Binary/logistic classifier or simple Beta distribution per customer profile
+XGBoost / scikit-learn
+Cash-flow forecaster
+Project daily cash balance 30 days out (best/expected/worst)
+Deterministic simulation: known obligations (fixed dates) + probabilistic receivables (from payment-delay model), Monte Carlo for best/worst bands
+XGBoost + time-series features, or simple simulation (recommended over LSTM for hackathon time budget)
+Risk scorer
+0-100 risk score + severity ranking of causes
+Rule-weighted combination of (deficit size / safety reserve), (deficit proximity in days), (confidence of causing events)
+Rules engine, not ML ΓÇö keep it explainable
+Recommendation: Don't use LSTM unless your team already has one working ΓÇö XGBoost + explicit simulation is faster to build, easier to explain live to judges, and just as convincing for a 30-day horizon with sparse per-company data.
+Forecast output shape (stored in forecasts.daily_projection):
+[
+  {"day": 0,  "expected": 620000, "best": 620000, "worst": 620000},
+  {"day": 5,  "expected": 410000, "best": 480000, "worst": 350000},
+  {"day": 17, "expected": -140000, "best": 60000, "worst": -420000},
+  {"day": 30, "expected": 80000,  "best": 300000, "worst": -150000}
+]
+5. RAG Corpus & Retrieval
+Documents to include (keep small and curated ΓÇö 15-25 short docs, not a huge corpus):
+MSME delayed-payment guidance (public/government summaries)
+TReDS (Trade Receivables Discounting System) eligibility basics
+Generic invoice-financing eligibility criteria
+Company-specific policy stubs you write yourself: "Safety reserve policy", "Supplier negotiation policy", "Approval threshold policy"
+Stack: LangChain or LlamaIndex + FAISS (simplest, no external service) or Chroma. Chunk size ~300-500 tokens, top-k=3 retrieval.
+Usage pattern: RAG is called as a tool by the agent, not blended into every response. Example tool call the agent makes mid-reasoning:
+retrieve_policy(query="Is a Γé╣3L overdue invoice eligible for invoice financing?")
+ΓåÆ returns 2-3 relevant policy chunks
+ΓåÆ agent cites them when constructing Option C (invoice financing)
+This is what justifies RAG being a real component rather than decoration ΓÇö call it out explicitly in the demo narration.
+6. Agent Tools (function-calling interface)
+Define these as callable tools for the LangGraph/orchestrator agent:
+tools = [
+    {
+        "name": "get_financial_snapshot",
+        "description": "Fetch current cash, receivables, payables, obligations for a company",
+        "params": {"company_id": "uuid"}
+    },
+    {
+        "name": "run_cash_forecast",
+        "description": "Run ML forecast engine for N-day horizon",
+        "params": {"company_id": "uuid", "horizon_days": "int"}
+    },
+    {
+        "name": "get_risk_breakdown",
+        "description": "Get ranked causes contributing to a cash deficit",
+        "params": {"forecast_id": "uuid"}
+    },
+    {
+        "name": "retrieve_policy",
+        "description": "RAG lookup over financial policy/guideline corpus",
+        "params": {"query": "string"}
+    },
+    {
+        "name": "simulate_scenario",
+        "description": "What-if: re-run forecast with a hypothetical change",
+        "params": {"company_id": "uuid", "modification": "object"}
+    },
+    {
+        "name": "draft_action",
+        "description": "Generate the content for a proposed action (email, negotiation terms, financing app) without sending it",
+        "params": {"action_type": "string", "target_ref_id": "uuid"}
+    },
+    {
+        "name": "request_approval",
+        "description": "Submit a plan/action for human approval ΓÇö does not execute anything",
+        "params": {"plan_id": "uuid"}
+    },
+    {
+        "name": "execute_action",
+        "description": "Execute an already-approved action (simulated: log + mock notification, no real money movement)",
+        "params": {"action_id": "uuid"}
+    }
+]
+Hard rule baked into the orchestrator, not just the prompt: execute_action is only callable if the corresponding agent_actions.status == 'approved'. Enforce this in code, not just in the LLM's instructions ΓÇö judges may test this deliberately.
+7. Exact Agent Workflow (LangGraph state machine)
+[Data Ingested] 
+     ΓåÆ run_cash_forecast 
+     ΓåÆ IF deficit_day is not null:
+         ΓåÆ get_risk_breakdown  (REASON)
+         ΓåÆ LLM: generate_reasoning_summary
+         ΓåÆ LLM: generate_plan_options (PLAN)   [calls retrieve_policy as needed]
+         ΓåÆ rules_engine: assign permission_level to each proposed action
+         ΓåÆ request_approval   (blocks here ΓÇö waits for user)
+     ΓåÆ ON user approval:
+         ΓåÆ for each approved action: execute_action   (ACT)
+         ΓåÆ run_cash_forecast again   (VERIFY)
+         ΓåÆ LLM: generate_before_after_summary
+     ΓåÆ ON user rejection/modify:
+         ΓåÆ loop back to LLM: generate_plan_options with modification note
+Prompt ΓÇö Reasoning stage
+SYSTEM: You are Guardian, a financial reasoning assistant for an MSME owner.
+You are given a cash-flow forecast and a ranked list of risk events.
+Explain, in plain language, WHY a cash deficit is projected. Be specific
+about which receivables/payables/obligations are driving it and by how much.
+Do not recommend actions yet. Do not use unexplained jargon. Max 120 words.
+USER: Forecast: {forecast_json}
+Risk events: {risk_events_json}
+Prompt ΓÇö Planning stage
+SYSTEM: You are Guardian's planning module. Given the reasoning summary and
+the company's available financial levers (receivables, payables, financing),
+propose 3-4 distinct options to close the projected deficit. For each option
+provide: description, expected cash impact (Γé╣), cost/risk (low/medium/high),
+and confidence. If financing eligibility is relevant, call retrieve_policy
+first. Then recommend ONE option and justify the choice in 2-3 sentences.
+Output strict JSON matching this schema: {schema}
+USER: Reasoning: {reasoning_text}
+Available levers: {levers_json}
+Safety reserve: {safety_reserve}
+Prompt ΓÇö Action drafting stage
+SYSTEM: Draft the content for the following approved action. Keep it
+professional, factual, and non-threatening. This is a DRAFT for human
+review ΓÇö do not claim it has been sent.
+USER: Action type: {action_type}
+Context: {target_details_json}
+Prompt ΓÇö Verification/summary stage
+SYSTEM: Compare the forecast before and after the executed actions.
+State the change in the deficit/surplus clearly, in one short paragraph
+suitable for a dashboard notification.
+USER: Before: {before_forecast}
+After: {after_forecast}
+8. API Endpoints (FastAPI)
+POST   /companies/{id}/data/upload          # CSV ingestion (transactions, invoices, etc.)
+GET    /companies/{id}/snapshot              # current financial digital twin
+POST   /companies/{id}/forecast              # trigger forecast run
+GET    /companies/{id}/forecast/latest       # get latest forecast + chart data
+GET    /forecasts/{id}/risk                  # risk breakdown for a forecast
+POST   /forecasts/{id}/plan                  # trigger agent REASON+PLAN, returns agent_plans row
+POST   /plans/{id}/approve                   # approve plan ΓåÆ creates agent_actions
+POST   /plans/{id}/reject
+POST   /plans/{id}/modify
+POST   /actions/{id}/approve                 # per-action approval (Level 2/3 gate)
+POST   /actions/{id}/execute                 # simulated execution
+GET    /companies/{id}/actions               # action center status list
+POST   /companies/{id}/simulate              # what-if simulator
+POST   /companies/{id}/ask                   # "Ask Guardian" free-text Q&A (RAG + snapshot grounded)
+GET    /companies/{id}/audit-log
+Auth: JWT bearer token on every route; role check (owner/finance_manager/viewer) via FastAPI dependency; viewer role is read-only across all POST routes.
+9. Frontend Pages (React + TS + Tailwind + Recharts)
+Executive Dashboard ΓÇö cash available, projected cash, risk score badge, next-crisis countdown, alert banner ΓåÆ "Investigate" CTA
+Cash Flow Forecast ΓÇö line chart with expected/best/worst bands (Recharts AreaChart), horizon toggle (7/30/60 days)
+AI Investigation ΓÇö risk breakdown list (color-coded by severity) + "Ask Guardian" free-text box
+Agent Plan ΓÇö option cards (A/B/C/D) with impact/cost/risk badges, recommended option highlighted, Approve/Modify/Reject buttons
+Action Center ΓÇö status list (Sent/Pending/Updated) per action, audit trail
+What-If Simulator ΓÇö form to adjust one variable (e.g. "Customer A pays N days later") ΓåÆ re-run forecast ΓåÆ side-by-side before/after chart
+Folder structure:
+/frontend
+  /src
+    /pages
+      Dashboard.tsx
+      Forecast.tsx
+      Investigation.tsx
+      AgentPlan.tsx
+      ActionCenter.tsx
+      WhatIf.tsx
+    /components
+      CashChart.tsx
+      RiskBadge.tsx
+      PlanOptionCard.tsx
+      ApprovalModal.tsx
+    /api
+      client.ts        # axios instance + typed endpoint calls
+    /types
+      index.ts
+    App.tsx
+/backend
+  /app
+    /models             # SQLAlchemy models matching schema above
+    /routers             # one file per endpoint group
+    /ml
+      forecast.py
+      payment_delay.py
+      risk.py
+    /agent
+      orchestrator.py    # LangGraph graph definition
+      tools.py
+      prompts.py
+    /rag
+      ingest.py
+      retrieve.py
+    /core
+      auth.py
+      permissions.py
+      config.py
+  main.py
+/data
+  /synthetic
+    generate_dataset.py
+    seed_crisis.py
+/docs
+  policies/               # RAG source documents (markdown/txt)
+10. Security Slide Content
+Auth: JWT + refresh tokens; passwords hashed (bcrypt/argon2)
+Authorization: RBAC ΓÇö Owner / Finance Manager / Viewer, enforced at the API layer
+Data protection: HTTPS only, encrypted sensitive fields at rest (e.g. pgcrypto), secrets via environment vars/vault, no real banking credentials in the prototype
+AI/agent security: 
+Tool-permission boundaries ΓÇö each tool has a fixed, narrow scope; execute_action code-gated on approval status
+Three-tier action permission system (see below)
+Basic prompt-injection mitigation ΓÇö RAG/user content is never treated as instructions to the orchestrator, only as data (clearly delimited in prompts)
+Full audit log of every agent recommendation, approval, and execution
+Guardian Permission Levels (put this on its own slide ΓÇö it's a strong "responsible AI" signal to judges):
+≡ƒƒó L1 Automatic ΓÇö analyze, forecast, alert, generate reports
+≡ƒƒí L2 Approval Required ΓÇö prepare payment reminders, supplier negotiations, financing applications
+≡ƒö┤ L3 Strict Approval ΓÇö anything touching money transfer, borrowing, investment, or bank-account changes
+11. 48-Hour Development Plan
+Hour 0ΓÇô4 ΓÇö Setup & Data
+Repo scaffolding (frontend + backend), DB schema migration
+Synthetic data generator running, crisis scenario seeded and verified
+Hour 4ΓÇô12 ΓÇö Core Backend
+CRUD/ingestion endpoints, financial snapshot endpoint
+Payment-delay + cash-forecast ML models trained and callable
+Risk scoring rules engine
+Hour 12ΓÇô20 ΓÇö Agent Layer
+LangGraph orchestrator with REASON ΓåÆ PLAN nodes wired to real forecast/risk data
+Prompts implemented and tested against the seeded crisis scenario
+RAG corpus written (15-25 docs) + FAISS index + retrieve_policy tool
+Hour 20ΓÇô28 ΓÇö Approval & Action Layer
+Plan approval endpoints, action drafting, permission-level gating
+Simulated execute_action (writes to DB, generates mock notification content, no external calls)
+Audit log wired end-to-end
+Hour 28ΓÇô36 ΓÇö Frontend Core
+Dashboard, Forecast chart, Investigation page
+Agent Plan page with Approve/Modify/Reject flow
+Hour 36ΓÇô42 ΓÇö Frontend Polish + What-If
+Action Center, What-If Simulator
+End-to-end walkthrough test on the seeded crisis scenario (this must work flawlessly ΓÇö it's your demo)
+Hour 42ΓÇô46 ΓÇö Demo Prep
+Script and rehearse the 2-minute demo (see Section 12)
+Fix rough edges only in the exact demo path; don't chase unrelated bugs
+Hour 46ΓÇô48 ΓÇö Buffer
+Slack for anything overrunning; prepare backup screenshots/video in case of live-demo failure
+12. Final Demo Script (2 minutes)
+Time
+Action
+Line
+0:00
+Dashboard
+"This company has Γé╣6.2 lakh cash and looks healthy."
+0:20
+Click Forecast
+"Our AI predicts a Γé╣1.4 lakh cash deficit in 17 days."
+0:40
+Click Investigate
+AI explains: customer delay + supplier obligation + payroll
+1:00
+Click Generate Rescue Plan
+Agent proposes Options AΓÇôD, citing a retrieved policy for Option C
+1:20
+Select recommended option
+Show reasoning + expected impact
+1:30
+Owner clicks Approve
+Actions move to Action Center
+1:40
+Actions execute (simulated)
+Status updates live
+2:00
+Return to Forecast
+≡ƒö┤ -Γé╣1.4L ΓåÆ ≡ƒƒó +Γé╣3.1L
+Closing line: "We didn't build an AI that tells an entrepreneur they're in trouble. We built an AI agent that sees the trouble coming and helps them prevent it."
+Claim only: prototype demonstrates autonomous financial workflows on synthetic data, designed for integration with banking/accounting APIs. Never claim: real bank access, guaranteed outcomes, or autonomous money transfer.
+13. MVP Checklist (don't build beyond this for the hackathon)
+[ ] CSV data ingestion
+[ ] Cash-flow forecasting (ML)
+[ ] Payment-delay prediction (ML)
+[ ] Risk detection (rules + ML)
+[ ] AI investigation (LLM)
+[ ] Agentic rescue plan (Reason ΓåÆ Plan, with RAG tool call)
+[ ] Action + human approval + simulated execution
+[ ] One flawless end-to-end demo path on seeded data
+Yes. For CashFlow Guardian, I recommend having two separate diagrams in your PPT:
+System Design / Technical Architecture ΓÇö shows judges how your technology works.
+User Journey / User Flow ΓÇö shows judges how a real MSME owner uses the product.
+The key is to make both diagrams clearly demonstrate Reason ΓåÆ Plan ΓåÆ Human Approval ΓåÆ Act ΓåÆ Verify.
+1. ≡ƒÅù∩╕Å CashFlow Guardian ΓÇö System Design Flow
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé          MSME USER            Γöé
+                         Γöé     Business Owner / CFO      Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé         WEB APPLICATION       Γöé
+                         Γöé       React + TypeScript       Γöé
+                         Γöé                               Γöé
+                         Γöé  Dashboard | Forecast | Agent Γöé
+                         Γöé  Alerts | Simulator | Actions Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                    HTTPS / REST
+                                         Γöé
+                                         Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé         API GATEWAY           Γöé
+                         Γöé          FastAPI               Γöé
+                         Γöé                               Γöé
+                         Γöé Authentication / AuthorizationΓöé
+                         Γöé Request Validation / Rate LimitΓöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé                    Γöé                    Γöé
+                    Γû╝                    Γû╝                    Γû╝
+          ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+          Γöé   PostgreSQL     Γöé Γöé  Data Processing Γöé Γöé  Authentication  Γöé
+          Γöé                  Γöé Γöé                  Γöé Γöé                  Γöé
+          Γöé Users            Γöé Γöé Pandas / NumPy   Γöé Γöé JWT / RBAC       Γöé
+          Γöé Transactions     Γöé Γöé Data Cleaning    Γöé Γöé                  Γöé
+          Γöé Invoices         Γöé Γöé Feature Creation Γöé Γöé                  Γöé
+          Γöé Customers        Γöé Γöé                  Γöé Γöé                  Γöé
+          Γöé Suppliers        Γöé Γöé                  Γöé Γöé                  Γöé
+          ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                   Γöé                    Γöé
+                   ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé    FINANCIAL DIGITAL      Γöé
+                  Γöé          TWIN              Γöé
+                  Γöé                           Γöé
+                  Γöé Current Cash              Γöé
+                  Γöé Receivables               Γöé
+                  Γöé Payables                  Γöé
+                  Γöé Obligations               Γöé
+                  Γöé Customer Behavior         Γöé
+                  Γöé Supplier Behavior         Γöé
+                  Γöé Cash Position              Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                Γöé
+                                Γû╝
+                 ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                 Γöé       AI / ML ENGINE         Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Cash Flow Forecast       Γöé Γöé
+                 Γöé Γöé XGBoost / Time Series    Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Payment Delay Prediction Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Financial Risk Scoring   Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Anomaly Detection        Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                Γöé
+                                Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé       RISK ENGINE       Γöé
+                    Γöé                         Γöé
+                    Γöé Cash Deficit Risk       Γöé
+                    Γöé Receivable Risk         Γöé
+                    Γöé Obligation Risk         Γöé
+                    Γöé Liquidity Risk          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                                 Γû╝
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γöé          RAG KNOWLEDGE ENGINE          Γöé
+             Γöé                                        Γöé
+             Γöé  Financial Policies                    Γöé
+             Γöé  MSME Guidelines                       Γöé
+             Γöé  Financing Rules                       Γöé
+             Γöé  Company Policies                      Γöé
+             Γöé  Payment Policies                      Γöé
+             Γöé                                        Γöé
+             Γöé       Vector DB / FAISS                Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                  Γöé
+                                  Γû╝
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γöé          AGENT ORCHESTRATOR            Γöé
+             Γöé                                        Γöé
+             Γöé              LLM                       Γöé
+             Γöé                                        Γöé
+             Γöé              REASON                    Γöé
+             Γöé                 Γåô                      Γöé
+             Γöé               PLAN                     Γöé
+             Γöé                 Γåô                      Γöé
+             Γöé            SAFETY CHECK                 Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                  Γöé
+                                  Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé    ACTION PLANNER       Γöé
+                    Γöé                         Γöé
+                    Γöé Payment Reminder        Γöé
+                    Γöé Supplier Negotiation    Γöé
+                    Γöé Financing RecommendationΓöé
+                    Γöé Payment Rescheduling    Γöé
+                    Γöé Monitoring              Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                                 Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé    HUMAN APPROVAL       Γöé
+                    Γöé                         Γöé
+                    Γöé  Approve / Modify /     Γöé
+                    Γöé  Reject                 Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                           APPROVED?
+                           /       \
+                         NO         YES
+                         Γöé           Γöé
+                         Γû╝           Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ   ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Cancel Γöé   Γöé ACTION EXECUTION Γöé
+                    Γöé / Edit Γöé   Γöé                  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ   Γöé Reminder API     Γöé
+                                 Γöé Negotiation API  Γöé
+                                 Γöé Finance API      Γöé
+                                 Γöé Simulator        Γöé
+                                 ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                          Γöé
+                                          Γû╝
+                                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                Γöé     VERIFY       Γöé
+                                Γöé                  Γöé
+                                Γöé Did action work? Γöé
+                                Γöé Updated cashflow Γöé
+                                Γöé Updated forecast Γöé
+                                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         Γû╝
+                                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                Γöé     FEEDBACK     Γöé
+                                Γöé                  Γöé
+                                Γöé Update Financial Γöé
+                                Γöé Digital Twin     Γöé
+                                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                                         Γöé
+                                                         Γû╝
+                                                  NEXT DECISION
+2. ≡ƒöÑ The Most Important Part of the Architecture
+Put this as a highlighted box in your PPT:
+              CASHFLOW GUARDIAN AGENT
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé REASON  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé  PLAN   Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+               ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+               Γöé SAFETY CHECK Γöé
+               ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                      Γöé
+                      Γû╝
+              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+              Γöé HUMAN APPROVAL Γöé
+              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                      Γöé
+                      Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé   ACT   Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé VERIFY  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé  LEARN  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+This is the diagram that directly proves:
+This is an Agentic Finance system, not a chatbot.
+3. ≡ƒæñ User Use Flow Chart
+Now the second diagram should be much simpler.
+It answers:
+"What does the actual user do?"
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé       START       Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Register Company  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Add Business Data Γöé
+                    Γöé                   Γöé
+                    Γöé Transactions      Γöé
+                    Γöé Invoices          Γöé
+                    Γöé Receivables       Γöé
+                    Γöé Payables          Γöé
+                    Γöé Expenses          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Guardian Analyzes  Γöé
+                    Γöé Financial Health  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Financial         Γöé
+                    Γöé Digital Twin      Γöé
+                    Γöé Created           Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé View Dashboard    Γöé
+                    Γöé                   Γöé
+                    Γöé Cash              Γöé
+                    Γöé Risk              Γöé
+                    Γöé Receivables       Γöé
+                    Γöé Payables          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé Future Cash Crisis?    Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         NO   Γöé   YES
+                       ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                       Γöé             Γöé
+                       Γû╝             Γû╝
+                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                Γöé Continue   Γöé Γöé Alert User     Γöé
+                Γöé Monitoring Γöé Γöé                Γöé
+                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé "Why is this     Γöé
+                              Γöé happening?"      Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé AI Investigation Γöé
+                              Γöé                  Γöé
+                              Γöé Find Root Cause  Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé Generate Rescue  Γöé
+                              Γöé Plan             Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé Compare Options  Γöé
+                              Γöé                  Γöé
+                              Γöé Plan A           Γöé
+                              Γöé Plan B           Γöé
+                              Γöé Plan C           Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé AI RecommendationΓöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé User Reviews     Γöé
+                              Γöé                  Γöé
+                              Γöé Reason           Γöé
+                              Γöé Risk             Γöé
+                              Γöé Cost             Γöé
+                              Γöé Expected Impact  Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé User Decision    Γöé
+                              Γöé                  Γöé
+                              Γöé Approve          Γöé
+                              Γöé Modify           Γöé
+                              Γöé Reject           Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                 APPROVED?
+                                  /      \
+                                NO        YES
+                                Γöé          Γöé
+                                Γû╝          Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé End /    Γöé Γöé Execute      Γöé
+                         Γöé Modify   Γöé Γöé Action       Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Verify Result   Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Updated Cash    Γöé
+                                    Γöé Flow Forecast   Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Crisis         Γöé
+                                    Γöé Prevented?     Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                      CONTINUE
+                                      MONITORING
+4. ≡ƒÄ» User Flow in One Simple Diagram
+For the PPT, however, I would use a much cleaner version instead of putting the huge flowchart above.
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 1. ONBOARD   Γöé
+Γöé   Company    Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 2. CONNECT / Γöé
+Γöé UPLOAD DATA  Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 3. ANALYZE   Γöé
+Γöé Financial    Γöé
+Γöé Health       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 4. PREDICT   Γöé
+Γöé Future Cash  Γöé
+Γöé Crisis       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 5. INVESTIGATEΓöé
+Γöé Why?         Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 6. AI REASON Γöé
+Γöé & PLAN       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 7. HUMAN     Γöé
+Γöé APPROVAL     Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 8. ACT       Γöé
+Γöé Execute Safe Γöé
+Γöé Financial    Γöé
+Γöé Actions      Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 9. VERIFY    Γöé
+Γöé Result       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 10. PREVENT  Γöé
+Γöé THE CRISIS   Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+This is the one I'd recommend putting on your "How It Works" slide.
+5. ≡ƒÆÑ Real Example User Flow
+You can make another PPT slide called:
+ΓÇ£One Crisis. One AI Agent. One Decision.ΓÇ¥
+                 ABC MANUFACTURING
+                        Γöé
+                        Γû╝
+                Current Cash
+                   Γé╣6.2 L
+                        Γöé
+                        Γû╝
+             AI Forecasts 30 Days
+                        Γöé
+                        Γû╝
+             ≡ƒö┤ Γé╣1.4L DEFICIT
+                IN 17 DAYS
+                        Γöé
+                        Γû╝
+                 AI INVESTIGATES
+                        Γöé
+          ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+          Γû╝             Γû╝             Γû╝
+       Customer       Supplier       Payroll
+       Delay          Payment        Obligation
+       Γé╣3L            Γé╣2.5L          Γé╣1.8L
+          Γöé             Γöé             Γöé
+          ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                        Γû╝
+                AI GENERATES
+                 3 STRATEGIES
+                        Γöé
+                        Γû╝
+                RECOMMENDS PLAN
+                        Γöé
+                        Γû╝
+            ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+            Γöé HUMAN APPROVAL      Γöé
+            Γöé                     Γöé
+            Γöé Γ£ô Approve           Γöé
+            Γöé Γ£Ä Modify            Γöé
+            Γöé Γ£ò Reject            Γöé
+            ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                 ACTION EXECUTED
+                       Γöé
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γû╝                   Γû╝
+       Early Payment        Supplier
+       Request              Negotiation
+             Γöé                   Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γû╝
+                  RE-FORECAST
+                       Γöé
+                       Γû╝
+              BEFORE: -Γé╣1.4L ≡ƒö┤
+                       Γöé
+                       Γû╝
+              AFTER:  +Γé╣3.1L ≡ƒƒó
+                       Γöé
+                       Γû╝
+                ≡ƒÆ░ CRISIS PREVENTED
+This is probably your strongest PPT diagram.
+It tells the entire story in one picture.
+6. How the Two Diagrams Work Together
+Your presentation can show them on consecutive slides:
+Slide 1 ΓÇö System Architecture
+How does CashFlow Guardian work internally?
+Show:
+Data ΓåÆ ML ΓåÆ Risk ΓåÆ RAG ΓåÆ Agent ΓåÆ Approval ΓåÆ Action ΓåÆ Verification
+Slide 2 ΓÇö User Journey
+How does an MSME owner use it?
+Show:
+Upload ΓåÆ Predict ΓåÆ Investigate ΓåÆ Plan ΓåÆ Approve ΓåÆ Act ΓåÆ Verify
+Slide 3 ΓÇö Real-World Scenario
+How does it actually prevent a crisis?
+Show:
+Γé╣1.4L predicted deficit ΓåÆ AI rescue plan ΓåÆ action ΓåÆ Γé╣3.1L surplus
+That three-slide sequence will make the concept very easy for a screening judge to understand.
+If you want a polished visual rather than text diagrams, I can also create a professional CashFlow Guardian architecture diagram image suitable for directly placing into your PPT.
+Yes. For CashFlow Guardian, I recommend having two separate diagrams in your PPT:
+System Design / Technical Architecture ΓÇö shows judges how your technology works.
+User Journey / User Flow ΓÇö shows judges how a real MSME owner uses the product.
+The key is to make both diagrams clearly demonstrate Reason ΓåÆ Plan ΓåÆ Human Approval ΓåÆ Act ΓåÆ Verify.
+1. ≡ƒÅù∩╕Å CashFlow Guardian ΓÇö System Design Flow
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé          MSME USER            Γöé
+                         Γöé     Business Owner / CFO      Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé         WEB APPLICATION       Γöé
+                         Γöé       React + TypeScript       Γöé
+                         Γöé                               Γöé
+                         Γöé  Dashboard | Forecast | Agent Γöé
+                         Γöé  Alerts | Simulator | Actions Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                    HTTPS / REST
+                                         Γöé
+                                         Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé         API GATEWAY           Γöé
+                         Γöé          FastAPI               Γöé
+                         Γöé                               Γöé
+                         Γöé Authentication / AuthorizationΓöé
+                         Γöé Request Validation / Rate LimitΓöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé                    Γöé                    Γöé
+                    Γû╝                    Γû╝                    Γû╝
+          ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+          Γöé   PostgreSQL     Γöé Γöé  Data Processing Γöé Γöé  Authentication  Γöé
+          Γöé                  Γöé Γöé                  Γöé Γöé                  Γöé
+          Γöé Users            Γöé Γöé Pandas / NumPy   Γöé Γöé JWT / RBAC       Γöé
+          Γöé Transactions     Γöé Γöé Data Cleaning    Γöé Γöé                  Γöé
+          Γöé Invoices         Γöé Γöé Feature Creation Γöé Γöé                  Γöé
+          Γöé Customers        Γöé Γöé                  Γöé Γöé                  Γöé
+          Γöé Suppliers        Γöé Γöé                  Γöé Γöé                  Γöé
+          ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                   Γöé                    Γöé
+                   ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé    FINANCIAL DIGITAL      Γöé
+                  Γöé          TWIN              Γöé
+                  Γöé                           Γöé
+                  Γöé Current Cash              Γöé
+                  Γöé Receivables               Γöé
+                  Γöé Payables                  Γöé
+                  Γöé Obligations               Γöé
+                  Γöé Customer Behavior         Γöé
+                  Γöé Supplier Behavior         Γöé
+                  Γöé Cash Position              Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                Γöé
+                                Γû╝
+                 ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                 Γöé       AI / ML ENGINE         Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Cash Flow Forecast       Γöé Γöé
+                 Γöé Γöé XGBoost / Time Series    Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Payment Delay Prediction Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Financial Risk Scoring   Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 Γöé                              Γöé
+                 Γöé ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ Γöé
+                 Γöé Γöé Anomaly Detection        Γöé Γöé
+                 Γöé ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ Γöé
+                 ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                Γöé
+                                Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé       RISK ENGINE       Γöé
+                    Γöé                         Γöé
+                    Γöé Cash Deficit Risk       Γöé
+                    Γöé Receivable Risk         Γöé
+                    Γöé Obligation Risk         Γöé
+                    Γöé Liquidity Risk          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                                 Γû╝
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γöé          RAG KNOWLEDGE ENGINE          Γöé
+             Γöé                                        Γöé
+             Γöé  Financial Policies                    Γöé
+             Γöé  MSME Guidelines                       Γöé
+             Γöé  Financing Rules                       Γöé
+             Γöé  Company Policies                      Γöé
+             Γöé  Payment Policies                      Γöé
+             Γöé                                        Γöé
+             Γöé       Vector DB / FAISS                Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                  Γöé
+                                  Γû╝
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γöé          AGENT ORCHESTRATOR            Γöé
+             Γöé                                        Γöé
+             Γöé              LLM                       Γöé
+             Γöé                                        Γöé
+             Γöé              REASON                    Γöé
+             Γöé                 Γåô                      Γöé
+             Γöé               PLAN                     Γöé
+             Γöé                 Γåô                      Γöé
+             Γöé            SAFETY CHECK                 Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                  Γöé
+                                  Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé    ACTION PLANNER       Γöé
+                    Γöé                         Γöé
+                    Γöé Payment Reminder        Γöé
+                    Γöé Supplier Negotiation    Γöé
+                    Γöé Financing RecommendationΓöé
+                    Γöé Payment Rescheduling    Γöé
+                    Γöé Monitoring              Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                                 Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé    HUMAN APPROVAL       Γöé
+                    Γöé                         Γöé
+                    Γöé  Approve / Modify /     Γöé
+                    Γöé  Reject                 Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                 Γöé
+                           APPROVED?
+                           /       \
+                         NO         YES
+                         Γöé           Γöé
+                         Γû╝           Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ   ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Cancel Γöé   Γöé ACTION EXECUTION Γöé
+                    Γöé / Edit Γöé   Γöé                  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ   Γöé Reminder API     Γöé
+                                 Γöé Negotiation API  Γöé
+                                 Γöé Finance API      Γöé
+                                 Γöé Simulator        Γöé
+                                 ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                          Γöé
+                                          Γû╝
+                                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                Γöé     VERIFY       Γöé
+                                Γöé                  Γöé
+                                Γöé Did action work? Γöé
+                                Γöé Updated cashflow Γöé
+                                Γöé Updated forecast Γöé
+                                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         Γû╝
+                                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                Γöé     FEEDBACK     Γöé
+                                Γöé                  Γöé
+                                Γöé Update Financial Γöé
+                                Γöé Digital Twin     Γöé
+                                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                         Γöé
+                                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                                         Γöé
+                                                         Γû╝
+                                                  NEXT DECISION
+2. ≡ƒöÑ The Most Important Part of the Architecture
+Put this as a highlighted box in your PPT:
+              CASHFLOW GUARDIAN AGENT
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé REASON  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé  PLAN   Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+               ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+               Γöé SAFETY CHECK Γöé
+               ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                      Γöé
+                      Γû╝
+              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+              Γöé HUMAN APPROVAL Γöé
+              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                      Γöé
+                      Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé   ACT   Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé VERIFY  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé  LEARN  Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+This is the diagram that directly proves:
+This is an Agentic Finance system, not a chatbot.
+3. ≡ƒæñ User Use Flow Chart
+Now the second diagram should be much simpler.
+It answers:
+"What does the actual user do?"
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé       START       Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Register Company  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Add Business Data Γöé
+                    Γöé                   Γöé
+                    Γöé Transactions      Γöé
+                    Γöé Invoices          Γöé
+                    Γöé Receivables       Γöé
+                    Γöé Payables          Γöé
+                    Γöé Expenses          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Guardian Analyzes  Γöé
+                    Γöé Financial Health  Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé Financial         Γöé
+                    Γöé Digital Twin      Γöé
+                    Γöé Created           Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                    Γöé View Dashboard    Γöé
+                    Γöé                   Γöé
+                    Γöé Cash              Γöé
+                    Γöé Risk              Γöé
+                    Γöé Receivables       Γöé
+                    Γöé Payables          Γöé
+                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                              Γöé
+                              Γû╝
+                  ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                  Γöé Future Cash Crisis?    Γöé
+                  ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                         NO   Γöé   YES
+                       ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                       Γöé             Γöé
+                       Γû╝             Γû╝
+                ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                Γöé Continue   Γöé Γöé Alert User     Γöé
+                Γöé Monitoring Γöé Γöé                Γöé
+                ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé "Why is this     Γöé
+                              Γöé happening?"      Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé AI Investigation Γöé
+                              Γöé                  Γöé
+                              Γöé Find Root Cause  Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé Generate Rescue  Γöé
+                              Γöé Plan             Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé Compare Options  Γöé
+                              Γöé                  Γöé
+                              Γöé Plan A           Γöé
+                              Γöé Plan B           Γöé
+                              Γöé Plan C           Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé AI RecommendationΓöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé User Reviews     Γöé
+                              Γöé                  Γöé
+                              Γöé Reason           Γöé
+                              Γöé Risk             Γöé
+                              Γöé Cost             Γöé
+                              Γöé Expected Impact  Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                       Γû╝
+                              ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                              Γöé User Decision    Γöé
+                              Γöé                  Γöé
+                              Γöé Approve          Γöé
+                              Γöé Modify           Γöé
+                              Γöé Reject           Γöé
+                              ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                       Γöé
+                                 APPROVED?
+                                  /      \
+                                NO        YES
+                                Γöé          Γöé
+                                Γû╝          Γû╝
+                         ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                         Γöé End /    Γöé Γöé Execute      Γöé
+                         Γöé Modify   Γöé Γöé Action       Γöé
+                         ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Verify Result   Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Updated Cash    Γöé
+                                    Γöé Flow Forecast   Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                    ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+                                    Γöé Crisis         Γöé
+                                    Γöé Prevented?     Γöé
+                                    ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                                             Γöé
+                                             Γû╝
+                                      CONTINUE
+                                      MONITORING
+4. ≡ƒÄ» User Flow in One Simple Diagram
+For the PPT, however, I would use a much cleaner version instead of putting the huge flowchart above.
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 1. ONBOARD   Γöé
+Γöé   Company    Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 2. CONNECT / Γöé
+Γöé UPLOAD DATA  Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 3. ANALYZE   Γöé
+Γöé Financial    Γöé
+Γöé Health       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 4. PREDICT   Γöé
+Γöé Future Cash  Γöé
+Γöé Crisis       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 5. INVESTIGATEΓöé
+Γöé Why?         Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 6. AI REASON Γöé
+Γöé & PLAN       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 7. HUMAN     Γöé
+Γöé APPROVAL     Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 8. ACT       Γöé
+Γöé Execute Safe Γöé
+Γöé Financial    Γöé
+Γöé Actions      Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 9. VERIFY    Γöé
+Γöé Result       Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+       Γåô
+ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Γöé 10. PREVENT  Γöé
+Γöé THE CRISIS   Γöé
+ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+This is the one I'd recommend putting on your "How It Works" slide.
+5. ≡ƒÆÑ Real Example User Flow
+You can make another PPT slide called:
+ΓÇ£One Crisis. One AI Agent. One Decision.ΓÇ¥
+                 ABC MANUFACTURING
+                        Γöé
+                        Γû╝
+                Current Cash
+                   Γé╣6.2 L
+                        Γöé
+                        Γû╝
+             AI Forecasts 30 Days
+                        Γöé
+                        Γû╝
+             ≡ƒö┤ Γé╣1.4L DEFICIT
+                IN 17 DAYS
+                        Γöé
+                        Γû╝
+                 AI INVESTIGATES
+                        Γöé
+          ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+          Γû╝             Γû╝             Γû╝
+       Customer       Supplier       Payroll
+       Delay          Payment        Obligation
+       Γé╣3L            Γé╣2.5L          Γé╣1.8L
+          Γöé             Γöé             Γöé
+          ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö╝ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                        Γû╝
+                AI GENERATES
+                 3 STRATEGIES
+                        Γöé
+                        Γû╝
+                RECOMMENDS PLAN
+                        Γöé
+                        Γû╝
+            ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+            Γöé HUMAN APPROVAL      Γöé
+            Γöé                     Γöé
+            Γöé Γ£ô Approve           Γöé
+            Γöé Γ£Ä Modify            Γöé
+            Γöé Γ£ò Reject            Γöé
+            ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γöé
+                       Γû╝
+                 ACTION EXECUTED
+                       Γöé
+             ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö┤ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+             Γû╝                   Γû╝
+       Early Payment        Supplier
+       Request              Negotiation
+             Γöé                   Γöé
+             ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+                       Γû╝
+                  RE-FORECAST
+                       Γöé
+                       Γû╝
+              BEFORE: -Γé╣1.4L ≡ƒö┤
+                       Γöé
+                       Γû╝
+              AFTER:  +Γé╣3.1L ≡ƒƒó
+                       Γöé
+                       Γû╝
+                ≡ƒÆ░ CRISIS PREVENTED
+This is probably your strongest PPT diagram.
+It tells the entire story in one picture.
+6. How the Two Diagrams Work Together
+Your presentation can show them on consecutive slides:
+Slide 1 ΓÇö System Architecture
+How does CashFlow Guardian work internally?
+Show:
+Data ΓåÆ ML ΓåÆ Risk ΓåÆ RAG ΓåÆ Agent ΓåÆ Approval ΓåÆ Action ΓåÆ Verification
+Slide 2 ΓÇö User Journey
+How does an MSME owner use it?
+Show:
+Upload ΓåÆ Predict ΓåÆ Investigate ΓåÆ Plan ΓåÆ Approve ΓåÆ Act ΓåÆ Verify
+Slide 3 ΓÇö Real-World Scenario
+How does it actually prevent a crisis?
+Show:
+Γé╣1.4L predicted deficit ΓåÆ AI rescue plan ΓåÆ action ΓåÆ Γé╣3.1L surplus
+That three-slide sequence will make the concept very easy for a screening judge to understand.
+If you want a polished visual rather than text diagrams, I can also create a professional CashFlow Guardian architecture diagram image suitable for directly placing into your PPT.
+Here's the system architecture and the user journey, each split into a couple of focused diagrams so nothing gets cramped.
+System design
+At the top level, the React frontend talks to a single FastAPI gateway, which fans out to three backend services (Postgres for state, the ML engine for forecasting/risk, and the RAG engine for policy lookups), all of which feed into the agent orchestrator.Inside the orchestrator, the actual reason ΓåÆ plan ΓåÆ act loop runs as a boustrophedon: reasoning and planning happen with the LLM, then it passes through two gates (a rules-based safety check and human approval) before anything executes, and verification closes the loop back into the next cycle.## User journey
+The user's path splits naturally into two parts. First, onboarding ΓÇö getting from a blank account to a live risk view:Then, once the dashboard flags a risk, the rescue workflow takes over ΓÇö this is the core demo moment:That's the full picture: architecture on top, the agent's internal loop, and the two-part user journey (onboarding ΓåÆ rescue). Want me to add these as a slide or two to a pitch deck, or turn one of them into the "What-if simulator" flow as well?

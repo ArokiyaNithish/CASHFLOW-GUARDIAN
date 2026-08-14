@@ -1,0 +1,31 @@
+# Environment files
+.env
+*.env
+!.env.example
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+cashflow_guardian.db
+
+# Dependencies
+node_modules/
+backend/venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Build outputs
+dist/
+build/
+.output/
+
+# IDE & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

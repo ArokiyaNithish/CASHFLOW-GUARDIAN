@@ -1,0 +1,31 @@
+payable_id,company_id,supplier_id,supplier_name,amount,due_date,status,priority
+23f18f3b-55b3-4020-9aac-41b30f4a1693,abc-precision-001,33a9b40d-1ea6-4964-8ce3-08edd0c4de34,Cheema Inc,156000.0,2026-09-13,open,critical
+d5891e88-e4c3-4e72-8011-23cc74ae3b75,abc-precision-001,78238da3-82a6-4642-a8ef-f935b333f33f,Bera-Panchal,102000.0,2026-09-20,open,critical
+ce78166e-df30-4edd-8cdd-3420761d1f67,abc-precision-001,820da8d7-b452-4ff7-b81a-e1f6e43b6eb5,Nori Inc,105000.0,2026-08-19,open,flexible
+fdec4f23-22f8-4ea6-a77f-e4277bd6deca,abc-precision-001,76ebc0d7-f23f-418e-8237-b1fe93d6c64a,Trivedi-Sane,233000.0,2026-08-29,open,normal
+4dfddadb-bbd5-4ab5-be04-4d3a19d8d3fc,abc-precision-001,5e76e7d1-4728-42cc-a11f-4eff73c56f45,"Mody, Jayaraman and Suresh",210000.0,2026-09-22,open,normal
+13d39b7a-8ff1-4dda-ade9-4e8fd86b271b,abc-precision-001,43edec87-9c23-4037-aceb-79f78173f6a3,Hayer-Mitter,163000.0,2026-08-15,open,normal
+0bb3e9cd-2823-4b30-a80e-3a4fbb75b906,abc-precision-001,43edec87-9c23-4037-aceb-79f78173f6a3,Hayer-Mitter,162000.0,2026-08-25,open,normal
+6817de86-30b5-4c31-858f-cda6438800de,abc-precision-001,0de2b7b0-6bf7-4e77-a41e-4fd5ea0472ec,"Cherian, Chand and Saran",122000.0,2026-08-30,open,normal
+9d91f37d-a732-4802-9bd1-7fdee0cdee81,abc-precision-001,aa530bbf-f05d-4528-996e-77b7f66714fd,Arora Ltd,268000.0,2026-09-27,open,normal
+b9e164c1-e923-4eaf-9627-b4df7ee70ec5,abc-precision-001,4efd9782-7409-4bd5-a1de-1519a007dda6,"Krishnamurthy, Mittal and Mangat",169000.0,2026-08-14,open,normal
+b2f72eca-9482-43df-9003-5d526524a1ac,abc-precision-001,eb30ec82-b476-4583-8ec8-ed2ad1651b83,Keer-Suri,95000.0,2026-08-19,open,flexible
+60a7d2ad-5bb8-45c6-8e6c-72b864abce57,abc-precision-001,eafeae77-dcb2-432a-8c77-3ed486cb4dbc,Pal Inc,180000.0,2026-09-14,open,normal
+ce0b5b8c-ff88-4071-8c5b-0fc7c621e0ec,abc-precision-001,820da8d7-b452-4ff7-b81a-e1f6e43b6eb5,Nori Inc,159000.0,2026-09-27,open,flexible
+d1bf687b-63fd-4a39-b599-8edacffb601b,abc-precision-001,7784fbf9-5355-4fd0-8e6a-28433f201152,Chaudhry-Hans,151000.0,2026-09-14,open,critical
+fe0e02c5-2dc5-471a-ab4d-10ea76f25ded,abc-precision-001,1722159d-16da-4044-b33c-4a1a05acd01a,Manne Group,109000.0,2026-08-19,open,flexible
+54d551d9-1ad5-4d35-9c8b-48b904ab956d,abc-precision-001,e41e5d1f-4c17-4c99-a5ad-127d1239f30e,Sarraf-Vyas,96000.0,2026-09-27,open,normal
+f2c73e35-ab62-423c-bf4c-4553cacc1b7f,abc-precision-001,7d63ceb4-141e-4285-8f78-cb2fe0f15ef6,Jha-Khalsa,130000.0,2026-09-20,open,critical
+8e66b7ce-73a9-4f60-a7a2-243bb752dc10,abc-precision-001,4efd9782-7409-4bd5-a1de-1519a007dda6,"Krishnamurthy, Mittal and Mangat",123000.0,2026-09-16,open,normal
+35268392-7180-4923-a858-8a9452a35c4e,abc-precision-001,78238da3-82a6-4642-a8ef-f935b333f33f,Bera-Panchal,119000.0,2026-09-18,open,critical
+9005bc70-6662-4a6d-b59e-068f30fdd3b4,abc-precision-001,7784fbf9-5355-4fd0-8e6a-28433f201152,Chaudhry-Hans,103000.0,2026-09-12,open,critical
+812cdea8-51ad-4b16-addb-02bcef96b6fb,abc-precision-001,7c0e7fad-d7c2-4e94-bdbd-e7a9f9f5c082,Kalita-Chander,63000.0,2026-08-28,open,normal
+357d4756-35a0-4362-a672-3df819695934,abc-precision-001,eb30ec82-b476-4583-8ec8-ed2ad1651b83,Keer-Suri,62000.0,2026-09-03,open,flexible
+932b11bc-01fe-4a76-814d-ba5465c9a74d,abc-precision-001,4efd9782-7409-4bd5-a1de-1519a007dda6,"Krishnamurthy, Mittal and Mangat",80000.0,2026-09-27,open,normal
+c89a5a0e-e39e-4ffa-911d-36dc200be431,abc-precision-001,eb30ec82-b476-4583-8ec8-ed2ad1651b83,Keer-Suri,105000.0,2026-09-13,open,flexible
+7ec8eabc-86a6-4a56-b49f-d93cfaaf746a,abc-precision-001,5e76e7d1-4728-42cc-a11f-4eff73c56f45,"Mody, Jayaraman and Suresh",191000.0,2026-09-16,open,normal
+468b67f2-49fd-4ca3-a529-12f1df221ca9,abc-precision-001,38d18d9d-6fce-474b-badb-c40fbeb0be64,"Sankaran, Srivastava and Dada",110000.0,2026-08-26,open,flexible
+b6754fba-72c2-4a62-9cfe-6210508c8019,abc-precision-001,0de2b7b0-6bf7-4e77-a41e-4fd5ea0472ec,"Cherian, Chand and Saran",112000.0,2026-08-25,open,normal
+0b149937-a58f-4d09-89e3-2ddf1290a393,abc-precision-001,7784fbf9-5355-4fd0-8e6a-28433f201152,Chaudhry-Hans,64000.0,2026-09-17,open,critical
+44d75953-3979-4e41-a211-7d3fa40b3a8d,abc-precision-001,327377ab-ff6b-49fd-98a2-3cf0f65ecedf,Comar-Vaidya,179000.0,2026-08-17,open,flexible
+e7383ae3-d4c9-4227-ad5d-10ae9739b7a4,abc-precision-001,7784fbf9-5355-4fd0-8e6a-28433f201152,Chaudhry-Hans,202000.0,2026-08-22,open,critical

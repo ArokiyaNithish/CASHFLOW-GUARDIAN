@@ -1,0 +1,6 @@
+obligation_id,company_id,type,amount,due_day_of_month,frequency,label
+9fc69fb8-b61a-42a7-ae24-8256320572a0,abc-precision-001,payroll,180000,10,monthly,Staff Payroll
+a3983737-75ac-4dae-b39a-0381f3a97af9,abc-precision-001,rent,50000,1,monthly,Factory Rent
+022ac055-8b81-4dea-802f-f6bf50582cc8,abc-precision-001,emi,80000,15,monthly,Equipment EMI
+bcaab31e-c532-480b-ae1d-0eec457feb01,abc-precision-001,tax,120000,15,quarterly,GST Filing
+68f1499a-8474-463d-b33f-2a3b54c578f6,abc-precision-001,utility,15000,5,monthly,Power & Water

@@ -1,0 +1,26 @@
+supplier_id,company_id,name,negotiability,penalty_rate
+1722159d-16da-4044-b33c-4a1a05acd01a,abc-precision-001,Manne Group,high,0.013
+327377ab-ff6b-49fd-98a2-3cf0f65ecedf,abc-precision-001,Comar-Vaidya,high,0.018
+785348cd-d6d9-4f39-9c7d-0e05d2920eff,abc-precision-001,"Muni, Bora and Gandhi",high,0.011
+38d18d9d-6fce-474b-badb-c40fbeb0be64,abc-precision-001,"Sankaran, Srivastava and Dada",high,0.03
+637a9b4b-f0c4-4ae0-9566-79da997a78d7,abc-precision-001,Sood-Dua,high,0.004
+2f368020-0eaf-4e1a-aa56-c2fea3c31195,abc-precision-001,Setty PLC,high,0.015
+eb30ec82-b476-4583-8ec8-ed2ad1651b83,abc-precision-001,Keer-Suri,high,0.023
+820da8d7-b452-4ff7-b81a-e1f6e43b6eb5,abc-precision-001,Nori Inc,high,0.026
+7c0e7fad-d7c2-4e94-bdbd-e7a9f9f5c082,abc-precision-001,Kalita-Chander,medium,0.005
+3cf039c3-b1ec-479a-bc9c-f2b6d5ac4fa5,abc-precision-001,Dave Ltd,medium,0.005
+43edec87-9c23-4037-aceb-79f78173f6a3,abc-precision-001,Hayer-Mitter,medium,0.02
+0de2b7b0-6bf7-4e77-a41e-4fd5ea0472ec,abc-precision-001,"Cherian, Chand and Saran",medium,0.018
+e41e5d1f-4c17-4c99-a5ad-127d1239f30e,abc-precision-001,Sarraf-Vyas,medium,0.012
+eafeae77-dcb2-432a-8c77-3ed486cb4dbc,abc-precision-001,Pal Inc,medium,0.018
+76ebc0d7-f23f-418e-8237-b1fe93d6c64a,abc-precision-001,Trivedi-Sane,medium,0.014
+3098b8a5-32a7-438c-959c-2ca98e699209,abc-precision-001,Bhargava-Aggarwal,medium,0.008
+c144421e-d13e-41da-96b6-9508d2246683,abc-precision-001,"Date, Wason and Naik",medium,0.017
+4efd9782-7409-4bd5-a1de-1519a007dda6,abc-precision-001,"Krishnamurthy, Mittal and Mangat",medium,0.028
+5e76e7d1-4728-42cc-a11f-4eff73c56f45,abc-precision-001,"Mody, Jayaraman and Suresh",medium,0.02
+aa530bbf-f05d-4528-996e-77b7f66714fd,abc-precision-001,Arora Ltd,medium,0.003
+42572469-cd7f-4716-8594-2cedce7aabfc,abc-precision-001,"Arya, Dugal and Dhar",low,0.027
+7d63ceb4-141e-4285-8f78-cb2fe0f15ef6,abc-precision-001,Jha-Khalsa,low,0.023
+7784fbf9-5355-4fd0-8e6a-28433f201152,abc-precision-001,Chaudhry-Hans,low,0.023
+78238da3-82a6-4642-a8ef-f935b333f33f,abc-precision-001,Bera-Panchal,low,0.01
+33a9b40d-1ea6-4964-8ce3-08edd0c4de34,abc-precision-001,Cheema Inc,low,0.009
