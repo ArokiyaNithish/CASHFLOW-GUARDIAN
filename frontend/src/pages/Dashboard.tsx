@@ -134,7 +134,7 @@ export default function Dashboard() {
       ) : (
         <>
           {/* Row 1: HealthRing + Chart */}
-          <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 24, marginBottom: 24 }}>
+          <div className="responsive-grid-dashboard" style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 24, marginBottom: 24 }}>
             <div className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 28 }}>
               <p className="section-label" style={{ marginBottom: 20 }}>Health Score</p>
               <HealthRing score={snap?.health_score ?? 100} subScores={subScores} size={160} />
@@ -156,7 +156,7 @@ export default function Dashboard() {
           </div>
 
           {/* Row 2: KPI Cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginBottom: 24 }}>
+          <div className="responsive-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginBottom: 24 }}>
             <KpiCard
               label="Cash Available"
               amount={snap?.current_cash ?? 0}

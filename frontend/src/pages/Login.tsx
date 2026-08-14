@@ -166,9 +166,9 @@ export default function Login() {
   };
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh' }}>
+    <div className="responsive-login-wrapper" style={{ display: 'flex', minHeight: '100vh' }}>
       {/* LEFT — Brand panel */}
-      <div style={{
+      <div className="responsive-brand-panel" style={{
         width: '42%', background: '#1E1C1A', display: 'flex', flexDirection: 'column',
         justifyContent: 'center', padding: '60px 48px',
       }}>
